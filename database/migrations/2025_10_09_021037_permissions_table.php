@@ -11,7 +11,11 @@ return new class extends Migration
      */
     public function up(): void
     {
-        //
+        Schema::create(table:'permissions', callback: function (Blueprint $table): void {
+            $table->id();
+            $table->string(column: 'name')->unique();
+            $table->timestamps();
+        });
     }
 
     /**
@@ -19,6 +23,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        //
+        Schema::dropIfExists(table:'permissions');
     }
 };
