@@ -107,11 +107,11 @@
                                                     @error('email')
                                                         <div class="alert alert-danger">{{ $message }}</div>
                                                     @enderror
-                                                 <label for="name">Tên người dùng&nbsp;<span class="required"
+                                                 {{-- <label for="name">Tên người dùng&nbsp;<span class="required"
                                                         aria-hidden="true">*</span><span class="screen-reader-text">Bắt
-                                                        buộc</span></label>
+                                                        buộc</span></label> --}}
                                                 <input type="text" 
-                                                    class="woocommerce-Input woocommerce-Input--text input-text" name="name"
+                                                    class="woocommerce-Input woocommerce-Input--text input-text" placeholder="Tên người dùng" name="name"
                                                     id="name" autocomplete="name" value="{{ old('name') }}" required aria-required="true" />
                                                 @error('name')
                                                     <div class="alert alert-danger">{{ $message }}</div>
