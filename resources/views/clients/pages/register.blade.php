@@ -32,9 +32,9 @@
                                         <div class="u-column1 col-1">
 
 
-                                            <h2>Đăng nhập</h2>
+                                            {{-- <h2>Đăng nhập</h2> --}}
 
-                                            <form class="woocommerce-form woocommerce-form-login login" method="post"
+                                            {{-- <form class="woocommerce-form woocommerce-form-login login" method="post"
                                                 novalidate>
 
 
@@ -57,6 +57,7 @@
                                                         type="password" name="password" id="password"
                                                         autocomplete="current-password" required aria-required="true" />
                                                     --}}
+                                                    {{--
                                                 </p>
 
 
@@ -80,7 +81,7 @@
                                                 </p>
 
 
-                                            </form>
+                                            </form> --}}
 
 
                                         </div>
@@ -89,67 +90,77 @@
 
                                             <h2>Đăng ký</h2>
 
-                                            <form action="{{ route('register.post') }}" method="POST" id="register-form"
+                                            <form action="{{ route('post-register') }}" method="POST" id="register"
                                                 class="woocommerce-form woocommerce-form-register register">
                                                 {{-- Using for validation submit form in laravel --}}
                                                 @csrf
 
                                                 <p
                                                     class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
-                                                    <label for="reg_email">Địa chỉ email&nbsp;<span class="required"
+                                                     <label for="reg_email">Địa chỉ email&nbsp;<span class="required"
                                                             aria-hidden="true">*</span><span class="screen-reader-text">Bắt
                                                             buộc</span></label>
                                                     <input type="email"
                                                         class="woocommerce-Input woocommerce-Input--text input-text"
-                                                        name="email" id="reg_email" autocomplete="email" value="" required
+                                                        name="email" id="reg_email" autocomplete="email" value="{{ old('email') }}" required
                                                         aria-required="true" />
-                                                    <label for="name">Tên người dùng&nbsp;<span class="required"
-                                                            aria-hidden="true">*</span><span class="screen-reader-text">Bắt
-                                                            buộc</span></label>
-                                                    <input type="text"
-                                                        class="woocommerce-Input woocommerce-Input--text input-text"
-                                                        name="name" id="name" autocomplete="name" value="" required
-                                                        aria-required="true" />
-                                                    <label for="password">Mật khẩu&nbsp;<span class="required"
-                                                            aria-hidden="true">*</span><span class="screen-reader-text">Bắt
-                                                            buộc</span></label>
-                                                    <input type="password"
-                                                        class="woocommerce-Input woocommerce-Input--text input-text"
-                                                        name="password" id="password" autocomplete="password" value=""
-                                                        required aria-required="true" />
-                                                    <label for="confirm_password">Xác nhận mật khẩu&nbsp;<span
-                                                            class="required" aria-hidden="true">*</span><span
-                                                            class="screen-reader-text">Bắt buộc</span></label>
-                                                    <input type="password"
-                                                        class="woocommerce-Input woocommerce-Input--text input-text"
-                                                        name="confirm_password" id="confirm_password"
-                                                        autocomplete="confirm_password" value="" required
-                                                        aria-required="true" />
+                                                    @error('email')
+                                                        <div class="alert alert-danger">{{ $message }}</div>
+                                                    @enderror
+                                                 <label for="name">Tên người dùng&nbsp;<span class="required"
+                                                        aria-hidden="true">*</span><span class="screen-reader-text">Bắt
+                                                        buộc</span></label>
+                                                <input type="text" 
+                                                    class="woocommerce-Input woocommerce-Input--text input-text" name="name"
+                                                    id="name" autocomplete="name" value="{{ old('name') }}" required aria-required="true" />
+                                                @error('name')
+                                                    <div class="alert alert-danger">{{ $message }}</div>
+                                                @enderror
+                                                <label for="password">Mật khẩu&nbsp;<span class="required"
+                                                        aria-hidden="true">*</span><span class="screen-reader-text">Bắt
+                                                        buộc</span></label>
+                                                <input type="password"
+                                                    class="woocommerce-Input woocommerce-Input--text input-text"
+                                                    name="password" id="password" autocomplete="password" value="" required
+                                                    aria-required="true" />
+                                                @error('password')
+                                                    <div class="alert alert-danger">{{ $message }}</div>
+                                                @enderror
+                                                <label for="confirm_password">Xác nhận mật khẩu&nbsp;<span class="required"
+                                                        aria-hidden="true">*</span><span class="screen-reader-text">Bắt
+                                                        buộc</span></label>
+                                                <input type="password"
+                                                    class="woocommerce-Input woocommerce-Input--text input-text"
+                                                    name="confirm_password" id="confirm_password"
+                                                    autocomplete="confirm_password" value="" required
+                                                    aria-required="true" />
+                                                 @error('confirm_password')
+                                                <div class="alert alert-danger">{{ $message }}</div>
+                                                @enderror
                                                 </p>
 
 
-                                                <p>Một liên kết để xác thực tài khoản sẽ được gửi đến địa chỉ email của bạn.
-                                                </p>
+                                                {{-- <p>Một liên kết để xác thực tài khoản sẽ được gửi đến địa chỉ email của
+                                                    bạn.
+                                                </p> --}}
 
 
                                                 <wc-order-attribution-inputs></wc-order-attribution-inputs>
                                                 <div class="woocommerce-privacy-policy-text">
                                                     <input type="checkbox" name="privacy_policy" value="1" required
-                                                        aria-required="true"> Your personal data will be used to support
-                                                    your
-                                                    experience throughout
-                                                    this website, to manage access to your account, and for other
-                                                    purposes described in our <a href="#"
-                                                        class="woocommerce-privacy-policy-link" target="_blank">privacy
-                                                        policy</a>.</>
+                                                        aria-required="true"> Tôi đồng ý với tất cả <a href="#"
+                                                        class="woocommerce-privacy-policy-link" target="_blank">điều khoản và điều kiện sử dụng</a>.</>
+                                                    @error('privacy_policy')
+                                                        <div class="alert alert-danger">{{ $message }}</div>
+                                                    @enderror
                                                 </div>
                                                 <p class="woocommerce-form-row form-row">
                                                     <input type="hidden" id="woocommerce-register-nonce"
                                                         name="woocommerce-register-nonce" value="21ea9ed1a9" /><input
                                                         type="hidden" name="_wp_http_referer" value="/my-account/" />
                                                     <button type="submit"
-                                                        class="woocommerce-Button woocommerce-button button woocommerce-form-register__submit"
-                                                        name="register" value="Register">Đăng ký</button>
+                                                        class="woocommerce-Button woocommerce-button button woocommerce-form-register__submit">Đăng
+                                                        ký</button>
                                                 </p>
 
 

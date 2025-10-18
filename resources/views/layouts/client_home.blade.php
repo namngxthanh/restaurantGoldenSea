@@ -662,6 +662,8 @@
 	<style>
 		/** Mega Menu CSS: fs **/
 	</style>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery-toastify@1.1.0/jquery.toastify.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
 </head>
 
 <body
@@ -1196,6 +1198,9 @@
 
 		if (window.RS_MODULES.checkMinimal !== undefined) { window.RS_MODULES.checkMinimal(); };
 	</script>
+	src="{{ asset('assets/clients/wp-includes/js/custom.js')}}"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/jquery-toastify@1.1.0/jquery.toastify.js"></script>
 </body>
 
 

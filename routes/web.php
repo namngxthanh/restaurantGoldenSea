@@ -28,4 +28,4 @@ Route::get('/faqs', function () {
     return view('clients.pages.faq');
 });
 Route::get('/register', [AuthController::class, 'showRegisterForm'])->name('register');
-Route::post('/register', [AuthController::class, 'register'])->name('register.post');
+Route::post('/register', [AuthController::class, 'register'])->name('post-register');

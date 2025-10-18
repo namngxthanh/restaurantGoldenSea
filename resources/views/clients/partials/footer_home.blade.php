@@ -15,7 +15,7 @@
                             <div class="pt-footer-social">
                                 <ul>
                                     <li><a href="#"><svg width="15" height="15" viewBox="0 0 15 15" fill="none"
-                                                xmlns="../www.w3.org/2000/svg.html">
+                                                xmlns="{{ asset('assets/www.w3.org/2000/svg.html') }}">
                                                 <g clip-path="url(#clip0_195_14)">
                                                     <mask id="mask0_195_14" style="mask-type:luminance"
                                                         maskUnits="userSpaceOnUse" x="0" y="0" width="15" height="15">
@@ -40,7 +40,7 @@
                                             </svg>
                                         </a></li>
                                     <li><a href="#"><svg width="15" height="15" viewBox="0 0 15 15" fill="none"
-                                                xmlns="../www.w3.org/2000/svg.html">
+                                                xmlns="{{ asset('assets/www.w3.org/2000/svg.html') }}">
                                                 <g clip-path="url(#clip0_195_35)">
                                                     <mask id="mask0_195_35" style="mask-type:luminance"
                                                         maskUnits="userSpaceOnUse" x="0" y="0" width="15" height="15">
@@ -60,7 +60,7 @@
                                             </svg>
                                         </a></li>
                                     <li><a href="#"><svg width="15" height="15" viewBox="0 0 15 15" fill="none"
-                                                xmlns="../www.w3.org/2000/svg.html">
+                                                xmlns="{{ asset('assets/www.w3.org/2000/svg.html') }}">
                                                 <g clip-path="url(#clip0_195_22)">
                                                     <mask id="mask0_195_22" style="mask-type:luminance"
                                                         maskUnits="userSpaceOnUse" x="0" y="0" width="15" height="15">
@@ -80,7 +80,7 @@
                                             </svg>
                                         </a></li>
                                     <li><a href="#"><svg width="15" height="15" viewBox="0 0 15 15" fill="none"
-                                                xmlns="../www.w3.org/2000/svg.html">
+                                                xmlns="{{ asset('assets/www.w3.org/2000/svg.html') }}">
                                                 <path
                                                     d="M8.66164 15V8.1583H10.9572L11.3016 5.49117H8.66164V3.7886C8.66164 3.01665 8.87513 2.49057 9.98336 2.49057L11.3945 2.48999V0.104422C11.1505 0.072709 10.3128 0 9.33778 0C7.30183 0 5.90798 1.24272 5.90798 3.52445V5.49117H3.60547V8.1583H5.90798V15H8.66164Z"
                                                     fill="white" />
@@ -176,7 +176,6 @@
                                         }
                                     })();
                                 </script>
-                                <!-- Mailchimp for WordPress v4.10.3 - https://wordpress.org/plugins/mailchimp-for-wp/ -->
                                 <form id="mc4wp-form-1" class="mc4wp-form mc4wp-form-2990" method="post" data-id="2990"
                                     data-name="">
                                     <div class="mc4wp-form-fields"><input type="email" name="EMAIL"
