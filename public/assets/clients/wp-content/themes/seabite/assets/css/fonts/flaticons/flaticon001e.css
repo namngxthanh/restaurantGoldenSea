@@ -1,0 +1,111 @@
+/*!
+*    ______ _       _   _
+*    |  ____| |     | | (_)
+*    | |__  | | __ _| |_ _  ___ ___  _ __
+*    |  __| | |/ _` | __| |/ __/ _ \| '_ \
+*    | |    | | (_| | |_| | (_| (_) | | | |
+*    |_|    |_|\__,_|\__|_|\___\___/|_| |_|
+*
+*         https://www.flaticon.com
+*/
+
+@font-face {
+    font-family: "flaticon";
+    src: url("flaticonc1bf.woff2?8281d35e68370f4118a83256d722ff8e") format("woff2"),
+url("flaticonc1bf.woff?8281d35e68370f4118a83256d722ff8e") format("woff"),
+url("flaticonc1bf.eot?8281d35e68370f4118a83256d722ff8e#iefix") format("embedded-opentype"),
+url("flaticonc1bf.ttf?8281d35e68370f4118a83256d722ff8e") format("truetype"),
+url("flaticonc1bf.svg?8281d35e68370f4118a83256d722ff8e#flaticon") format("svg")
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("Flaticon.html#Flaticon") format("svg");
+  }
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.flaticon-seafood:before {
+    content: "\f101";
+}
+.flaticon-shrimp:before {
+    content: "\f102";
+}
+.flaticon-crab:before {
+    content: "\f103";
+}
+.flaticon-clam:before {
+    content: "\f104";
+}
+.flaticon-seafood-1:before {
+    content: "\f105";
+}
+.flaticon-fish:before {
+    content: "\f106";
+}
+.flaticon-oyster:before {
+    content: "\f107";
+}
+.flaticon-fish-1:before {
+    content: "\f108";
+}
+.flaticon-fish-2:before {
+    content: "\f109";
+}
+.flaticon-canned-food:before {
+    content: "\f10a";
+}
+.flaticon-fish-market:before {
+    content: "\f10b";
+}
+.flaticon-shrimp-1:before {
+    content: "\f10c";
+}
+.flaticon-fish-3:before {
+    content: "\f10d";
+}
+.flaticon-lobster:before {
+    content: "\f10e";
+}
+.flaticon-seafood-2:before {
+    content: "\f10f";
+}
+.flaticon-dried-fish:before {
+    content: "\f110";
+}
+.flaticon-shrimp-2:before {
+    content: "\f111";
+}
+.flaticon-cazuela:before {
+    content: "\f112";
+}
+.flaticon-salmon:before {
+    content: "\f113";
+}
+.flaticon-fish-4:before {
+    content: "\f114";
+}
+.flaticon-serving-dish:before {
+    content: "\f115";
+}
+.flaticon-rating:before {
+    content: "\f116";
+}
+.flaticon-order-food:before {
+    content: "\f117";
+}
+.flaticon-restaurant:before {
+    content: "\f118";
+}
+
