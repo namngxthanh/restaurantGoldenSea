@@ -5,7 +5,9 @@ namespace App\Http\Controllers\Clients;
 use App\Http\Controllers\Controller;
 use App\Mail\ActivationMail;
 use App\Models\User;
+use Illuminate\Container\Attributes\Auth;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth as AuthFacade;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Mail;
 // use Str;
@@ -41,10 +43,11 @@ class AuthController extends Controller
             'confirm_password.required' => 'Xác nhận mật khẩu là bắt buộc',
             'confirm_password.string' => 'Xác nhận mật khẩu phải là một chuỗi',
             'confirm_password.min' => 'Xác nhận mật khẩu phải có ít nhất 6 ký tự',
-            // 'confirm_password.same' => 'Xác nhận mật khẩu không khớp',
+            'confirm_password.same' => 'Xác nhận mật khẩu không khớp nhau',
             'privacy_policy.required' => 'Bạn phải đồng ý với điều khoản và điều kiện sử dụng',
             'privacy_policy.boolean' => 'Bạn phải đồng ý với điều khoản và điều kiện sử dụng',
         ]);
+        
         
         //Check if user already exists
         $existingUser = User::where('email', $request->email)->first();
@@ -66,8 +69,8 @@ class AuthController extends Controller
             'activation_token' => $activationToken,
         ]);
         Mail::to($user->email)->send(new ActivationMail($activationToken, $user));
-        toastr()->success('Đăng ký thành công');
-        return redirect()->back();
+        toastr()->success('Đăng ký thành công, vui lòng kiểm tra email để xác thực tài khoản');
+        return redirect()->route('login');
         //Create user
         // $user = User::create($request->all());
         // return redirect()->route('login');
@@ -83,6 +86,48 @@ class AuthController extends Controller
         $user->activation_token = null;
         $user->save();
         toastr()->success('Tài khoản đã được kích hoạt thành công');
+        return redirect()->route('login');
+    }
+    public function showLoginForm()
+    {
+        return view('clients.pages.login');
+    }
+    public function login(Request $request)
+    {
+        $request->validate([
+            'email' => 'required|string|max:255|email',
+            'password' => 'required|string|min:6',
+        ], [
+            'email.required' => 'Email là bắt buộc',
+            'email.string' => 'Email phải là một chuỗi',
+            'email.max' => 'Email không được vượt quá 255 ký tự',
+            'email.email' => 'Email không hợp lệ',
+            'password.required' => 'Mật khẩu là bắt buộc',
+            'password.string' => 'Mật khẩu phải là một chuỗi',
+            'password.min' => 'Mật khẩu phải có ít nhất 6 ký tự',
+        ]);
+
+//Check login information
+        if(AuthFacade::attempt(['email' => $request->email, 'password' => $request->password, 'status' => 'active'])) {
+            if(in_array(AuthFacade::user()->role->name, haystack: ['customer'])) {
+                $request->session()->regenerate();
+                toastr()->success('Yay, đăng nhập thành công');
+                return redirect()->route('home');
+            }else{
+                AuthFacade::logout();
+                toastr()->warning('Bạn không có quyền truy cập vào trang này');
+                return redirect()->back();
+            }
+        }
+        toastr()->error('Thông tin đăng nhập chưa chính xác hoặc email chưa được kích hoạt');
         return redirect()->back();
+    }
+    public function logout(Request $request)
+    {
+        AuthFacade::logout();
+        $request->session()->invalidate();
+        $request->session()->regenerateToken();
+        toastr()->success('Đăng xuất thành công.');
+        return redirect()->route('login');
     }
 }

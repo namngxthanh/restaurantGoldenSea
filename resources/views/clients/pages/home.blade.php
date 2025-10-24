@@ -43,20 +43,21 @@
                                                                             style="overflow: hidden; position: absolute;">
                                                                             <rs-slide style="position: absolute;"
                                                                                 data-key="rs-4" data-title="Slide"
-                                                                                data-thumb="//seabite.peacefulqode.in/wp-content/uploads/2024/03/Main_Background-50x100.jpg"
+                                                                                data-thumb="{{ asset('assets/clients/wp-content/uploads/2024/03/Main_Background-50x100.jpg') }}"
                                                                                 data-anim="ms:600;"
                                                                                 data-filter="e:late;g:80;"
                                                                                 data-in="o:0;e:power1.in;"
                                                                                 data-out="a:false;">
                                                                                 <img fetchpriority="high" decoding="async"
-                                                                                    src="//seabite.peacefulqode.in/wp-content/plugins/revslider/public/assets/assets/dummy.png"
+                                                                                    src="{{ asset('assets/clients/wp-content/plugins/revslider/public/assets/assets/dummy.png') }}"
                                                                                     alt="" title="Main_Background"
                                                                                     width="1920" height="1080"
                                                                                     class="rev-slidebg tp-rs-img rs-lazyload"
-                                                                                    data-lazyload="//seabite.peacefulqode.in/wp-content/uploads/2024/03/Main_Background.jpg"
+                                                                                    data-lazyload="{{ url('assets/clients/wp-content/uploads/2024/03/Main_Background.jpg') }}"
                                                                                     data-bg="p:center top;" data-no-retina>
+                                                                                -->
                                                                                 <!--
-                                                                                                                                                                                                    -->
+                                                                                                                                                                                                                    -->
                                                                                 <rs-layer id="slider-2-slide-4-layer-0"
                                                                                     data-type="text" data-color="#48b6f1"
                                                                                     data-rsp_ch="on"
@@ -74,7 +75,7 @@
                                                                                 </rs-layer>
                                                                                 <!--
 
-                                                                                                                                                                                                    -->
+                                                                                                                                                                                                                    -->
                                                                                 <rs-layer id="slider-2-slide-4-layer-1"
                                                                                     data-type="text" data-color="#161525"
                                                                                     data-rsp_ch="on"
@@ -92,7 +93,7 @@
                                                                                 </rs-layer>
                                                                                 <!--
 
-                                                                                                                                                                                                    -->
+                                                                                                                                                                                                                    -->
                                                                                 <rs-layer id="slider-2-slide-4-layer-2"
                                                                                     class="rev-btn" data-type="button"
                                                                                     data-rsp_ch="on"
@@ -113,7 +114,7 @@
                                                                                 </rs-layer>
                                                                                 <!--
 
-                                                                                                                                                                                                    -->
+                                                                                                                                                                                                                    -->
                                                                                 <rs-layer id="slider-2-slide-4-layer-3"
                                                                                     data-type="image" data-rsp_ch="on"
                                                                                     data-xy="x:c;xo:-20px,-59px,2px,48px;y:m;yo:308px,206px,159px,132px;"
@@ -124,15 +125,15 @@
                                                                                     data-frame_999="sX:0.7;sY:0.7;o:0;e:back.in;st:w;sp:500;sR:6400;"
                                                                                     style="z-index:11;"><img
                                                                                         decoding="async"
-                                                                                        src="//seabite.peacefulqode.in/wp-content/plugins/revslider/public/assets/assets/dummy.png"
+                                                                                        src="{{ url('assets/clients/wp-content/plugins/revslider/public/assets/assets/dummy.png') }}"
                                                                                         alt="" class="tp-rs-img rs-lazyload"
                                                                                         width="385" height="344"
-                                                                                        data-lazyload="//seabite.peacefulqode.in/wp-content/uploads/2024/04/4.webp"
+                                                                                        data-lazyload="{{ url('assets/clients/wp-content/uploads/2024/04/4.webp') }}"
                                                                                         data-no-retina>
                                                                                 </rs-layer>
                                                                                 <!--
 
-                                                                                                                                                                                                    -->
+                                                                                                                                                                                                                    -->
                                                                                 <rs-layer id="slider-2-slide-4-layer-4"
                                                                                     data-type="image" data-rsp_ch="on"
                                                                                     data-xy="x:r,r,r,c;xo:-60px,-47px,-70px,0;y:m,m,m,b;yo:80px,0,0,30px;"
@@ -144,15 +145,15 @@
                                                                                     data-loop_999="rZ:360;sp:15000;"
                                                                                     style="z-index:12;"><img
                                                                                         decoding="async"
-                                                                                        src="//seabite.peacefulqode.in/wp-content/plugins/revslider/public/assets/assets/dummy.png"
+                                                                                        src="{{ url('assets/clients/wp-content/plugins/revslider/public/assets/assets/dummy.png') }}"
                                                                                         alt="" class="tp-rs-img rs-lazyload"
                                                                                         width="724" height="726"
-                                                                                        data-lazyload="//seabite.peacefulqode.in/wp-content/uploads/2024/03/1-1-1.png"
+                                                                                        data-lazyload="{{ url('assets/clients/wp-content/uploads/2024/03/1-1-1.png') }}"
                                                                                         data-no-retina>
                                                                                 </rs-layer>
                                                                                 <!--
 
-                                                                                                                                                                                                    -->
+                                                                                                                                                                                                                    -->
                                                                                 <rs-layer id="slider-2-slide-4-layer-5"
                                                                                     data-type="image" data-rsp_ch="on"
                                                                                     data-xy="xo:15px,15px,20px,85px;y:m,m,m,t;yo:-80px,-140px,-100px,50px;"
@@ -166,15 +167,15 @@
                                                                                     data-frame_999_mask="u:t;x:100%;"
                                                                                     style="z-index:9;"><img loading="lazy"
                                                                                         decoding="async"
-                                                                                        src="//seabite.peacefulqode.in/wp-content/plugins/revslider/public/assets/assets/dummy.png"
+                                                                                        src="{{ url('assets/clients/wp-content/plugins/revslider/public/assets/assets/dummy.png') }}"
                                                                                         alt="" class="tp-rs-img rs-lazyload"
                                                                                         width="100" height="100"
-                                                                                        data-lazyload="//seabite.peacefulqode.in/wp-content/uploads/2024/04/sub-title-02.webp"
+                                                                                        data-lazyload="{{ url('assets/clients/wp-content/uploads/2024/04/sub-title-02.webp') }}"
                                                                                         data-no-retina>
                                                                                 </rs-layer>
                                                                                 <!--
 
-                                                                                                                                                                                                    -->
+                                                                                                                                                                                                                    -->
                                                                                 <rs-layer id="slider-2-slide-4-layer-7"
                                                                                     data-type="image" data-rsp_ch="on"
                                                                                     data-xy="xo:-197px,-101px,-216px,-204px;y:m;yo:-111px,-225px,-171px,-148px;"
@@ -185,31 +186,31 @@
                                                                                     data-frame_999="sX:0.7;sY:0.7;o:0;e:back.in;st:w;sp:500;sR:6400;"
                                                                                     style="z-index:10;"><img loading="lazy"
                                                                                         decoding="async"
-                                                                                        src="//seabite.peacefulqode.in/wp-content/plugins/revslider/public/assets/assets/dummy.png"
+                                                                                        src="{{ url('assets/clients/wp-content/plugins/revslider/public/assets/assets/dummy.png') }}"
                                                                                         alt="" class="tp-rs-img rs-lazyload"
                                                                                         width="386" height="455"
-                                                                                        data-lazyload="//seabite.peacefulqode.in/wp-content/uploads/2024/04/6.webp"
+                                                                                        data-lazyload="{{ url('assets/clients/wp-content/uploads/2024/04/6.webp') }}"
                                                                                         data-no-retina>
                                                                                 </rs-layer>
                                                                                 <!--
-                                                                                                                                                                                        -->
+                                                                                                                                                                                                        -->
                                                                             </rs-slide>
                                                                             <rs-slide style="position: absolute;"
                                                                                 data-key="rs-9" data-title="Slide"
-                                                                                data-thumb="//seabite.peacefulqode.in/wp-content/uploads/2024/03/Main_Background-50x100.jpg"
+                                                                                data-thumb="{{ url('assets/clients/wp-content/uploads/2024/03/Main_Background-50x100.jpg') }}"
                                                                                 data-anim="ms:600;"
                                                                                 data-filter="e:late;g:80;"
                                                                                 data-in="o:0;e:power1.in;"
                                                                                 data-out="a:false;">
                                                                                 <img fetchpriority="high" decoding="async"
-                                                                                    src="//seabite.peacefulqode.in/wp-content/plugins/revslider/public/assets/assets/dummy.png"
+                                                                                    src="{{ url('assets/clients/wp-content/plugins/revslider/public/assets/assets/dummy.png') }}"
                                                                                     alt="" title="Main_Background"
                                                                                     width="1920" height="1080"
                                                                                     class="rev-slidebg tp-rs-img rs-lazyload"
-                                                                                    data-lazyload="//seabite.peacefulqode.in/wp-content/uploads/2024/03/Main_Background.jpg"
+                                                                                    data-lazyload="{{ url('assets/clients/wp-content/uploads/2024/03/Main_Background.jpg') }}"
                                                                                     data-bg="p:center top;" data-no-retina>
                                                                                 <!--
-                                                                                                                                                                                                    -->
+                                                                                                                                                                                                                    -->
                                                                                 <rs-layer id="slider-2-slide-9-layer-0"
                                                                                     data-type="text" data-color="#48b6f1"
                                                                                     data-rsp_ch="on"
@@ -226,7 +227,7 @@
                                                                                 </rs-layer>
                                                                                 <!--
 
-                                                                                                                                                                                                    -->
+                                                                                                                                                                                                                    -->
                                                                                 <rs-layer id="slider-2-slide-9-layer-1"
                                                                                     data-type="text" data-color="#161525"
                                                                                     data-rsp_ch="on"
@@ -244,7 +245,7 @@
                                                                                 </rs-layer>
                                                                                 <!--
 
-                                                                                                                                                                                                    -->
+                                                                                                                                                                                                                    -->
                                                                                 <rs-layer id="slider-2-slide-9-layer-2"
                                                                                     class="rev-btn" data-type="button"
                                                                                     data-rsp_ch="on"
@@ -265,7 +266,7 @@
                                                                                 </rs-layer>
                                                                                 <!--
 
-                                                                                                                                                                                                    -->
+                                                                                                                                                                                                                    -->
                                                                                 <rs-layer id="slider-2-slide-9-layer-3"
                                                                                     data-type="image" data-rsp_ch="on"
                                                                                     data-xy="x:c;xo:-20px,-59px,2px,48px;y:m;yo:308px,206px,159px,132px;"
@@ -276,15 +277,15 @@
                                                                                     data-frame_999="sX:0.7;sY:0.7;o:0;e:back.in;st:w;sp:500;sR:6400;"
                                                                                     style="z-index:11;"><img
                                                                                         decoding="async"
-                                                                                        src="//seabite.peacefulqode.in/wp-content/plugins/revslider/public/assets/assets/dummy.png"
+                                                                                        src="{{ url('assets/clients/wp-content/plugins/revslider/public/assets/assets/dummy.png') }}"
                                                                                         alt="" class="tp-rs-img rs-lazyload"
                                                                                         width="385" height="344"
-                                                                                        data-lazyload="//seabite.peacefulqode.in/wp-content/uploads/2024/04/4.webp"
+                                                                                        data-lazyload="{{ url('assets/clients/wp-content/uploads/2024/04/4.webp') }}"
                                                                                         data-no-retina>
                                                                                 </rs-layer>
                                                                                 <!--
 
-                                                                                                                                                                                                    -->
+                                                                                                                                                                                                                    -->
                                                                                 <rs-layer id="slider-2-slide-9-layer-4"
                                                                                     data-type="image" data-rsp_ch="on"
                                                                                     data-xy="x:r,r,r,c;xo:-60px,-47px,-70px,0;y:m,m,m,b;yo:80px,0,0,30px;"
@@ -296,15 +297,15 @@
                                                                                     data-loop_999="rZ:360;sp:15000;"
                                                                                     style="z-index:12;"><img loading="lazy"
                                                                                         decoding="async"
-                                                                                        src="//seabite.peacefulqode.in/wp-content/plugins/revslider/public/assets/assets/dummy.png"
+                                                                                        src="{{ url('assets/clients/wp-content/plugins/revslider/public/assets/assets/dummy.png') }}"
                                                                                         alt="" class="tp-rs-img rs-lazyload"
                                                                                         width="724" height="726"
-                                                                                        data-lazyload="//seabite.peacefulqode.in/wp-content/uploads/2024/05/2.png"
+                                                                                        data-lazyload="{{ url('assets/clients/wp-content/uploads/2024/05/2.png') }}"
                                                                                         data-no-retina>
                                                                                 </rs-layer>
                                                                                 <!--
 
-                                                                                                                                                                                                    -->
+                                                                                                                                                                                                                    -->
                                                                                 <rs-layer id="slider-2-slide-9-layer-5"
                                                                                     data-type="image" data-rsp_ch="on"
                                                                                     data-xy="xo:15px,15px,20px,85px;y:m,m,m,t;yo:-80px,-140px,-100px,50px;"
@@ -318,15 +319,15 @@
                                                                                     data-frame_999_mask="u:t;x:100%;"
                                                                                     style="z-index:9;"><img loading="lazy"
                                                                                         decoding="async"
-                                                                                        src="//seabite.peacefulqode.in/wp-content/plugins/revslider/public/assets/assets/dummy.png"
+                                                                                        src="{{ url('assets/clients/wp-content/plugins/revslider/public/assets/assets/dummy.png') }}"
                                                                                         alt="" class="tp-rs-img rs-lazyload"
                                                                                         width="100" height="100"
-                                                                                        data-lazyload="//seabite.peacefulqode.in/wp-content/uploads/2024/04/sub-title-02.webp"
+                                                                                        data-lazyload="{{ url('assets/clients/wp-content/uploads/2024/04/sub-title-02.webp') }}"
                                                                                         data-no-retina>
                                                                                 </rs-layer>
                                                                                 <!--
 
-                                                                                                                                                                                                    -->
+                                                                                                                                                                                                                    -->
                                                                                 <rs-layer id="slider-2-slide-9-layer-7"
                                                                                     data-type="image" data-rsp_ch="on"
                                                                                     data-xy="xo:-197px,-101px,-216px,-204px;y:m;yo:-111px,-225px,-171px,-148px;"
@@ -337,31 +338,31 @@
                                                                                     data-frame_999="sX:0.7;sY:0.7;o:0;e:back.in;st:w;sp:500;sR:6400;"
                                                                                     style="z-index:10;"><img loading="lazy"
                                                                                         decoding="async"
-                                                                                        src="//seabite.peacefulqode.in/wp-content/plugins/revslider/public/assets/assets/dummy.png"
+                                                                                        src="{{ url('assets/clients/wp-content/plugins/revslider/public/assets/assets/dummy.png') }}"
                                                                                         alt="" class="tp-rs-img rs-lazyload"
                                                                                         width="386" height="455"
-                                                                                        data-lazyload="//seabite.peacefulqode.in/wp-content/uploads/2024/04/6.webp"
+                                                                                        data-lazyload="{{ url('assets/clients/wp-content/uploads/2024/04/6.webp') }}"
                                                                                         data-no-retina>
                                                                                 </rs-layer>
                                                                                 <!--
-                                                                                                                                                                                        -->
+                                                                                                                                                                                                        -->
                                                                             </rs-slide>
                                                                             <rs-slide style="position: absolute;"
                                                                                 data-key="rs-10" data-title="Slide"
-                                                                                data-thumb="//seabite.peacefulqode.in/wp-content/uploads/2024/03/Main_Background-50x100.jpg"
+                                                                                data-thumb="{{ url('assets/clients/wp-content/uploads/2024/03/Main_Background-50x100.jpg') }}"
                                                                                 data-anim="ms:600;"
                                                                                 data-filter="e:late;g:80;"
                                                                                 data-in="o:0;e:power1.in;"
                                                                                 data-out="a:false;">
                                                                                 <img fetchpriority="high" decoding="async"
-                                                                                    src="//seabite.peacefulqode.in/wp-content/plugins/revslider/public/assets/assets/dummy.png"
+                                                                                    src="{{ url('assets/clients/wp-content/plugins/revslider/public/assets/assets/dummy.png') }}"
                                                                                     alt="" title="Main_Background"
                                                                                     width="1920" height="1080"
                                                                                     class="rev-slidebg tp-rs-img rs-lazyload"
-                                                                                    data-lazyload="//seabite.peacefulqode.in/wp-content/uploads/2024/03/Main_Background.jpg"
+                                                                                    data-lazyload="{{ url('assets/clients/wp-content/uploads/2024/03/Main_Background.jpg') }}"
                                                                                     data-bg="p:center top;" data-no-retina>
                                                                                 <!--
-                                                                                                                                                                                                    -->
+                                                                                                                                                                                                                    -->
                                                                                 <rs-layer id="slider-2-slide-10-layer-0"
                                                                                     data-type="text" data-color="#48b6f1"
                                                                                     data-rsp_ch="on"
@@ -378,7 +379,7 @@
                                                                                 </rs-layer>
                                                                                 <!--
 
-                                                                                                                                                                                                    -->
+                                                                                                                                                                                                                    -->
                                                                                 <rs-layer id="slider-2-slide-10-layer-1"
                                                                                     data-type="text" data-color="#161525"
                                                                                     data-rsp_ch="on"
@@ -396,7 +397,7 @@
                                                                                 </rs-layer>
                                                                                 <!--
 
-                                                                                                                                                                                                    -->
+                                                                                                                                                                                                                    -->
                                                                                 <rs-layer id="slider-2-slide-10-layer-2"
                                                                                     class="rev-btn" data-type="button"
                                                                                     data-rsp_ch="on"
@@ -418,7 +419,7 @@
                                                                                 </rs-layer>
                                                                                 <!--
 
-                                                                                                                                                                                                    -->
+                                                                                                                                                                                                                    -->
                                                                                 <rs-layer id="slider-2-slide-10-layer-3"
                                                                                     data-type="image" data-rsp_ch="on"
                                                                                     data-xy="x:c;xo:-20px,-59px,2px,48px;y:m;yo:308px,206px,159px,132px;"
@@ -429,15 +430,15 @@
                                                                                     data-frame_999="sX:0.7;sY:0.7;o:0;e:back.in;st:w;sp:500;sR:6400;"
                                                                                     style="z-index:11;"><img
                                                                                         decoding="async"
-                                                                                        src="//seabite.peacefulqode.in/wp-content/plugins/revslider/public/assets/assets/dummy.png"
+                                                                                        src="{{ asset('assets/clients/wp-content/plugins/revslider/public/assets/assets/dummy.png') }}"
                                                                                         alt="" class="tp-rs-img rs-lazyload"
                                                                                         width="385" height="344"
-                                                                                        data-lazyload="//seabite.peacefulqode.in/wp-content/uploads/2024/04/4.webp"
+                                                                                        data-lazyload="{{ asset('assets/clients/wp-content/uploads/2024/04/4.webp') }}"
                                                                                         data-no-retina>
                                                                                 </rs-layer>
                                                                                 <!--
 
-                                                                                                                                                                                                    -->
+                                                                                                                                                                                                                    -->
                                                                                 <rs-layer id="slider-2-slide-10-layer-4"
                                                                                     data-type="image" data-rsp_ch="on"
                                                                                     data-xy="x:r,r,r,c;xo:-60px,-47px,-70px,0;y:m,m,m,b;yo:80px,0,0,30px;"
@@ -449,15 +450,15 @@
                                                                                     data-loop_999="rZ:360;sp:15000;"
                                                                                     style="z-index:12;"><img loading="lazy"
                                                                                         decoding="async"
-                                                                                        src="//seabite.peacefulqode.in/wp-content/plugins/revslider/public/assets/assets/dummy.png"
+                                                                                        src="{{ asset('assets/clients/wp-content/plugins/revslider/public/assets/assets/dummy.png') }}"
                                                                                         alt="" class="tp-rs-img rs-lazyload"
                                                                                         width="724" height="726"
-                                                                                        data-lazyload="//seabite.peacefulqode.in/wp-content/uploads/2024/05/3.png"
+                                                                                        data-lazyload="{{ asset('assets/clients/wp-content/uploads/2024/05/3.png') }}"
                                                                                         data-no-retina>
                                                                                 </rs-layer>
                                                                                 <!--
 
-                                                                                                                                                                                                    -->
+                                                                                                                                                                                                                    -->
                                                                                 <rs-layer id="slider-2-slide-10-layer-5"
                                                                                     data-type="image" data-rsp_ch="on"
                                                                                     data-xy="xo:15px,15px,20px,85px;y:m,m,m,t;yo:-80px,-140px,-100px,50px;"
@@ -471,15 +472,15 @@
                                                                                     data-frame_999_mask="u:t;x:100%;"
                                                                                     style="z-index:9;"><img loading="lazy"
                                                                                         decoding="async"
-                                                                                        src="//seabite.peacefulqode.in/wp-content/plugins/revslider/public/assets/assets/dummy.png"
+                                                                                        src="{{ asset('assets/clients/wp-content/plugins/revslider/public/assets/assets/dummy.png') }}"
                                                                                         alt="" class="tp-rs-img rs-lazyload"
                                                                                         width="100" height="100"
-                                                                                        data-lazyload="//seabite.peacefulqode.in/wp-content/uploads/2024/04/sub-title-02.webp"
+                                                                                        data-lazyload="{{ asset('assets/clients/wp-content/uploads/2024/04/sub-title-02.webp') }}"
                                                                                         data-no-retina>
                                                                                 </rs-layer>
                                                                                 <!--
 
-                                                                                                                                                                                                    -->
+                                                                                                                                                                                                                    -->
                                                                                 <rs-layer id="slider-2-slide-10-layer-7"
                                                                                     data-type="image" data-rsp_ch="on"
                                                                                     data-xy="xo:-197px,-101px,-216px,-204px;y:m;yo:-111px,-225px,-171px,-148px;"
@@ -490,14 +491,14 @@
                                                                                     data-frame_999="sX:0.7;sY:0.7;o:0;e:back.in;st:w;sp:500;sR:6400;"
                                                                                     style="z-index:10;"><img loading="lazy"
                                                                                         decoding="async"
-                                                                                        src="//seabite.peacefulqode.in/wp-content/plugins/revslider/public/assets/assets/dummy.png"
+                                                                                        src="{{ asset('assets/clients/wp-content/plugins/revslider/public/assets/assets/dummy.png') }}"
                                                                                         alt="" class="tp-rs-img rs-lazyload"
                                                                                         width="386" height="455"
-                                                                                        data-lazyload="//seabite.peacefulqode.in/wp-content/uploads/2024/04/6.webp"
+                                                                                        data-lazyload="{{ asset('assets/clients/wp-content/uploads/2024/04/6.webp') }}"
                                                                                         data-no-retina>
                                                                                 </rs-layer>
                                                                                 <!--
-                                                                                                                                                                                        -->
+                                                                                                                                                                                                        -->
                                                                             </rs-slide>
                                                                         </rs-slides>
                                                                     </rs-module>
@@ -557,7 +558,7 @@
 
                                                                                 <div class="pt-service-box-media"><img
                                                                                         decoding="async"
-                                                                                        src="http://seabite.peacefulqode.in/wp-content/uploads/2024/04/1.webp"
+                                                                                        src="http:{{ asset('assets/clients/wp-content/uploads/2024/04/1.webp') }}"
                                                                                         alt="service" /></div>
                                                                                 <h3 class="pt-service-box-title"> Cua gạch
                                                                                 </h3>
@@ -1072,7 +1073,7 @@
                                                                                                                 class="pt-grid-rating">
                                                                                                             </div>
                                                                                                             <a
-                                                                                                                href="https://seabite.peacefulqode.in/product/aqua-eats/">
+                                                                                                                href="https:{{ asset('assets/clients/wp-content/uploads/2024/04/1.webp') }}/product/aqua-eats/">
                                                                                                                 <h2
                                                                                                                     class="woocommerce-loop-product__title">
                                                                                                                     Cá ngừ
@@ -1214,7 +1215,7 @@
                                                                                                                 class="pt-grid-rating">
                                                                                                             </div>
                                                                                                             <a
-                                                                                                                href="https://seabite.peacefulqode.in/product/coastal-cuisine/">
+                                                                                                                href="https:{{ asset('assets/clients/wp-content/uploads/2024/04/1.webp') }}/product/coastal-cuisine/">
                                                                                                                 <h2
                                                                                                                     class="woocommerce-loop-product__title">
                                                                                                                     Tôm
@@ -1288,7 +1289,7 @@
                                                                                                                 class="pt-grid-rating">
                                                                                                             </div>
                                                                                                             <a
-                                                                                                                href="https://seabite.peacefulqode.in/product/crispy-calamari/">
+                                                                                                                href="https:{{ asset('assets/clients/wp-content/uploads/2024/04/1.webp') }}/product/crispy-calamari/">
                                                                                                                 <h2
                                                                                                                     class="woocommerce-loop-product__title">
                                                                                                                     Tôm hùm
@@ -1376,7 +1377,7 @@
                                                                                                                 class="pt-grid-rating">
                                                                                                             </div>
                                                                                                             <a
-                                                                                                                href="https://seabite.peacefulqode.in/product/grilled-salmon/">
+                                                                                                                href="https:{{ asset('assets/clients/wp-content/uploads/2024/04/1.webp') }}/product/grilled-salmon/">
                                                                                                                 <h2
                                                                                                                     class="woocommerce-loop-product__title">
                                                                                                                     Cá hồi
@@ -1465,7 +1466,7 @@
                                                                                                                 class="pt-grid-rating">
                                                                                                             </div>
                                                                                                             <a
-                                                                                                                href="https://seabite.peacefulqode.in/product/lobster-thermidor/">
+                                                                                                                href="{{ asset('assets/clients/wp-content/uploads/2024/04/1.webp') }}/product/lobster-thermidor/">
                                                                                                                 <h2
                                                                                                                     class="woocommerce-loop-product__title">
                                                                                                                     Cá trám
@@ -1550,7 +1551,7 @@
                                                                                                                 class="pt-grid-rating">
                                                                                                             </div>
                                                                                                             <a
-                                                                                                                href="https://seabite.peacefulqode.in/product/maritime-marvels/">
+                                                                                                                href="{{ asset('assets/clients/wp-content/uploads/2024/04/1.webp') }}/product/maritime-marvels/">
                                                                                                                 <h2
                                                                                                                     class="woocommerce-loop-product__title">
                                                                                                                     Mì hải
@@ -1624,7 +1625,7 @@
                                                                                                                 class="pt-grid-rating">
                                                                                                             </div>
                                                                                                             <a
-                                                                                                                href="https://seabite.peacefulqode.in/product/nautical-nosh/">
+                                                                                                                href="https:{{ asset('assets/clients/wp-content/uploads/2024/04/1.webp') }}/product/nautical-nosh/">
                                                                                                                 <h2
                                                                                                                     class="woocommerce-loop-product__title">
                                                                                                                     Hải sản
