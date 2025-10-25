@@ -127,7 +127,8 @@ class AuthController extends Controller
         AuthFacade::logout();
         $request->session()->invalidate();
         $request->session()->regenerateToken();
+    
         toastr()->success('Đăng xuất thành công.');
-        return redirect()->route('login');
+        return redirect()->route('home');
     }
 }

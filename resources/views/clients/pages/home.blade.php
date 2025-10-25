@@ -57,7 +57,7 @@
                                                                                     data-bg="p:center top;" data-no-retina>
                                                                                 -->
                                                                                 <!--
-                                                                                                                                                                                                                    -->
+                                                                                                                                                                                                                                        -->
                                                                                 <rs-layer id="slider-2-slide-4-layer-0"
                                                                                     data-type="text" data-color="#48b6f1"
                                                                                     data-rsp_ch="on"
@@ -75,7 +75,7 @@
                                                                                 </rs-layer>
                                                                                 <!--
 
-                                                                                                                                                                                                                    -->
+                                                                                                                                                                                                                                        -->
                                                                                 <rs-layer id="slider-2-slide-4-layer-1"
                                                                                     data-type="text" data-color="#161525"
                                                                                     data-rsp_ch="on"
@@ -93,7 +93,7 @@
                                                                                 </rs-layer>
                                                                                 <!--
 
-                                                                                                                                                                                                                    -->
+                                                                                                                                                                                                                                        -->
                                                                                 <rs-layer id="slider-2-slide-4-layer-2"
                                                                                     class="rev-btn" data-type="button"
                                                                                     data-rsp_ch="on"
@@ -114,7 +114,7 @@
                                                                                 </rs-layer>
                                                                                 <!--
 
-                                                                                                                                                                                                                    -->
+                                                                                                                                                                                                                                        -->
                                                                                 <rs-layer id="slider-2-slide-4-layer-3"
                                                                                     data-type="image" data-rsp_ch="on"
                                                                                     data-xy="x:c;xo:-20px,-59px,2px,48px;y:m;yo:308px,206px,159px,132px;"
@@ -133,7 +133,7 @@
                                                                                 </rs-layer>
                                                                                 <!--
 
-                                                                                                                                                                                                                    -->
+                                                                                                                                                                                                                                        -->
                                                                                 <rs-layer id="slider-2-slide-4-layer-4"
                                                                                     data-type="image" data-rsp_ch="on"
                                                                                     data-xy="x:r,r,r,c;xo:-60px,-47px,-70px,0;y:m,m,m,b;yo:80px,0,0,30px;"
@@ -153,7 +153,7 @@
                                                                                 </rs-layer>
                                                                                 <!--
 
-                                                                                                                                                                                                                    -->
+                                                                                                                                                                                                                                        -->
                                                                                 <rs-layer id="slider-2-slide-4-layer-5"
                                                                                     data-type="image" data-rsp_ch="on"
                                                                                     data-xy="xo:15px,15px,20px,85px;y:m,m,m,t;yo:-80px,-140px,-100px,50px;"
@@ -175,7 +175,7 @@
                                                                                 </rs-layer>
                                                                                 <!--
 
-                                                                                                                                                                                                                    -->
+                                                                                                                                                                                                                                        -->
                                                                                 <rs-layer id="slider-2-slide-4-layer-7"
                                                                                     data-type="image" data-rsp_ch="on"
                                                                                     data-xy="xo:-197px,-101px,-216px,-204px;y:m;yo:-111px,-225px,-171px,-148px;"
@@ -193,7 +193,7 @@
                                                                                         data-no-retina>
                                                                                 </rs-layer>
                                                                                 <!--
-                                                                                                                                                                                                        -->
+                                                                                                                                                                                                                            -->
                                                                             </rs-slide>
                                                                             <rs-slide style="position: absolute;"
                                                                                 data-key="rs-9" data-title="Slide"
@@ -210,7 +210,7 @@
                                                                                     data-lazyload="{{ url('assets/clients/wp-content/uploads/2024/03/Main_Background.jpg') }}"
                                                                                     data-bg="p:center top;" data-no-retina>
                                                                                 <!--
-                                                                                                                                                                                                                    -->
+                                                                                                                                                                                                                                        -->
                                                                                 <rs-layer id="slider-2-slide-9-layer-0"
                                                                                     data-type="text" data-color="#48b6f1"
                                                                                     data-rsp_ch="on"
@@ -227,7 +227,7 @@
                                                                                 </rs-layer>
                                                                                 <!--
 
-                                                                                                                                                                                                                    -->
+                                                                                                                                                                                                                                        -->
                                                                                 <rs-layer id="slider-2-slide-9-layer-1"
                                                                                     data-type="text" data-color="#161525"
                                                                                     data-rsp_ch="on"
@@ -245,7 +245,7 @@
                                                                                 </rs-layer>
                                                                                 <!--
 
-                                                                                                                                                                                                                    -->
+                                                                                                                                                                                                                                        -->
                                                                                 <rs-layer id="slider-2-slide-9-layer-2"
                                                                                     class="rev-btn" data-type="button"
                                                                                     data-rsp_ch="on"
@@ -266,7 +266,7 @@
                                                                                 </rs-layer>
                                                                                 <!--
 
-                                                                                                                                                                                                                    -->
+                                                                                                                                                                                                                                        -->
                                                                                 <rs-layer id="slider-2-slide-9-layer-3"
                                                                                     data-type="image" data-rsp_ch="on"
                                                                                     data-xy="x:c;xo:-20px,-59px,2px,48px;y:m;yo:308px,206px,159px,132px;"
@@ -285,7 +285,7 @@
                                                                                 </rs-layer>
                                                                                 <!--
 
-                                                                                                                                                                                                                    -->
+                                                                                                                                                                                                                                        -->
                                                                                 <rs-layer id="slider-2-slide-9-layer-4"
                                                                                     data-type="image" data-rsp_ch="on"
                                                                                     data-xy="x:r,r,r,c;xo:-60px,-47px,-70px,0;y:m,m,m,b;yo:80px,0,0,30px;"
@@ -305,7 +305,7 @@
                                                                                 </rs-layer>
                                                                                 <!--
 
-                                                                                                                                                                                                                    -->
+                                                                                                                                                                                                                                        -->
                                                                                 <rs-layer id="slider-2-slide-9-layer-5"
                                                                                     data-type="image" data-rsp_ch="on"
                                                                                     data-xy="xo:15px,15px,20px,85px;y:m,m,m,t;yo:-80px,-140px,-100px,50px;"
@@ -327,7 +327,7 @@
                                                                                 </rs-layer>
                                                                                 <!--
 
-                                                                                                                                                                                                                    -->
+                                                                                                                                                                                                                                        -->
                                                                                 <rs-layer id="slider-2-slide-9-layer-7"
                                                                                     data-type="image" data-rsp_ch="on"
                                                                                     data-xy="xo:-197px,-101px,-216px,-204px;y:m;yo:-111px,-225px,-171px,-148px;"
@@ -345,7 +345,7 @@
                                                                                         data-no-retina>
                                                                                 </rs-layer>
                                                                                 <!--
-                                                                                                                                                                                                        -->
+                                                                                                                                                                                                                            -->
                                                                             </rs-slide>
                                                                             <rs-slide style="position: absolute;"
                                                                                 data-key="rs-10" data-title="Slide"
@@ -362,7 +362,7 @@
                                                                                     data-lazyload="{{ url('assets/clients/wp-content/uploads/2024/03/Main_Background.jpg') }}"
                                                                                     data-bg="p:center top;" data-no-retina>
                                                                                 <!--
-                                                                                                                                                                                                                    -->
+                                                                                                                                                                                                                                        -->
                                                                                 <rs-layer id="slider-2-slide-10-layer-0"
                                                                                     data-type="text" data-color="#48b6f1"
                                                                                     data-rsp_ch="on"
@@ -379,7 +379,7 @@
                                                                                 </rs-layer>
                                                                                 <!--
 
-                                                                                                                                                                                                                    -->
+                                                                                                                                                                                                                                        -->
                                                                                 <rs-layer id="slider-2-slide-10-layer-1"
                                                                                     data-type="text" data-color="#161525"
                                                                                     data-rsp_ch="on"
@@ -397,7 +397,7 @@
                                                                                 </rs-layer>
                                                                                 <!--
 
-                                                                                                                                                                                                                    -->
+                                                                                                                                                                                                                                        -->
                                                                                 <rs-layer id="slider-2-slide-10-layer-2"
                                                                                     class="rev-btn" data-type="button"
                                                                                     data-rsp_ch="on"
@@ -419,7 +419,7 @@
                                                                                 </rs-layer>
                                                                                 <!--
 
-                                                                                                                                                                                                                    -->
+                                                                                                                                                                                                                                        -->
                                                                                 <rs-layer id="slider-2-slide-10-layer-3"
                                                                                     data-type="image" data-rsp_ch="on"
                                                                                     data-xy="x:c;xo:-20px,-59px,2px,48px;y:m;yo:308px,206px,159px,132px;"
@@ -438,7 +438,7 @@
                                                                                 </rs-layer>
                                                                                 <!--
 
-                                                                                                                                                                                                                    -->
+                                                                                                                                                                                                                                        -->
                                                                                 <rs-layer id="slider-2-slide-10-layer-4"
                                                                                     data-type="image" data-rsp_ch="on"
                                                                                     data-xy="x:r,r,r,c;xo:-60px,-47px,-70px,0;y:m,m,m,b;yo:80px,0,0,30px;"
@@ -458,7 +458,7 @@
                                                                                 </rs-layer>
                                                                                 <!--
 
-                                                                                                                                                                                                                    -->
+                                                                                                                                                                                                                                        -->
                                                                                 <rs-layer id="slider-2-slide-10-layer-5"
                                                                                     data-type="image" data-rsp_ch="on"
                                                                                     data-xy="xo:15px,15px,20px,85px;y:m,m,m,t;yo:-80px,-140px,-100px,50px;"
@@ -480,7 +480,7 @@
                                                                                 </rs-layer>
                                                                                 <!--
 
-                                                                                                                                                                                                                    -->
+                                                                                                                                                                                                                                        -->
                                                                                 <rs-layer id="slider-2-slide-10-layer-7"
                                                                                     data-type="image" data-rsp_ch="on"
                                                                                     data-xy="xo:-197px,-101px,-216px,-204px;y:m;yo:-111px,-225px,-171px,-148px;"
@@ -498,7 +498,7 @@
                                                                                         data-no-retina>
                                                                                 </rs-layer>
                                                                                 <!--
-                                                                                                                                                                                                        -->
+                                                                                                                                                                                                                            -->
                                                                             </rs-slide>
                                                                         </rs-slides>
                                                                     </rs-module>
@@ -558,7 +558,7 @@
 
                                                                                 <div class="pt-service-box-media"><img
                                                                                         decoding="async"
-                                                                                        src="http:{{ asset('assets/clients/wp-content/uploads/2024/04/1.webp') }}"
+                                                                                        src="{{ asset('assets/clients/wp-content/uploads/2024/04/1.webp') }}"
                                                                                         alt="service" /></div>
                                                                                 <h3 class="pt-service-box-title"> Cua gạch
                                                                                 </h3>

@@ -469,7 +469,7 @@
 		href='{{ asset('assets/clients/wp-content/uploads/elementor/css/post-268e728.css?ver=1744955942')}}'
 		media='all' />
 	<link rel='stylesheet' id='seabite-fonts-css'
-		href='../fonts.googleapis.com/css2e69e.css?family=Jost:ital,wght@0,100..900;1,100..900&amp;family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&amp;subset=latin%2Clatin-ext&amp;display=swap'
+		href='{{ asset('assets/fonts.googleapis.com/css2e69e.css?family=Jost:ital,wght@0,100..900;1,100..900&amp;family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&amp;subset=latin%2Clatin-ext&amp;display=swap')}}'
 		media='all' />
 	<link rel='stylesheet' id='bootstrap-css'
 		href='{{ asset('assets/clients/wp-content/themes/seabite/assets/css/bootstrap.mince52.css?ver=5.0.2')}}'
@@ -1130,7 +1130,7 @@
 	</script>
 	<script src="{{ asset('assets/clients/wp-content/plugins/elementor/assets/js/frontend.min87cc.js?ver=3.28.3')}}"
 		id="elementor-frontend-js"></script>
-	<script id="rs-initialisation-scripts">
+	<script src=id="rs-initialisation-scripts">
 		var tpj = jQuery;
 
 		var revapi2;
@@ -1198,7 +1198,7 @@
 
 		if (window.RS_MODULES.checkMinimal !== undefined) { window.RS_MODULES.checkMinimal(); };
 	</script>
-	src="{{ asset('assets/clients/wp-includes/js/custom.js')}}"></script>
+	<script src="{{ asset('assets/clients/wp-includes/js/custom.js')}}"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/jquery-toastify@1.1.0/jquery.toastify.js"></script>
 </body>
