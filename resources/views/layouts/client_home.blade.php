@@ -662,7 +662,6 @@
 	<style>
 		/** Mega Menu CSS: fs **/
 	</style>
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery-toastify@1.1.0/jquery.toastify.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
 </head>
 
@@ -907,7 +906,7 @@
 		if (typeof revslider_showDoubleJqueryError === "undefined") { function revslider_showDoubleJqueryError(sliderID) { console.log("You have some jquery.js library include that comes after the Slider Revolution files js inclusion."); console.log("To fix this, you can:"); console.log("1. Set 'Module General Options' -> 'Advanced' -> 'jQuery & OutPut Filters' -> 'Put JS to Body' to on"); console.log("2. Find the double jQuery.js inclusion and remove it"); return "Double Included jQuery Library"; } }
 	</script>
 	<link rel="preload" as="font" id="rs-icon-set-revicon-woff"
-		href="{{ asset('assets/clients/wp-content/plugins/revslider/public/assets/fonts/revicons/revicons90c6.woff?5510888')}}"
+		href="{{ asset('assets/clients/wp-content/plugins/revslider/public/assets/fonts/revicons/revicons90c6.woff')}}"
 		type="font/woff" crossorigin="anonymous" media="all" />
 	<link rel='stylesheet' id='wc-blocks-style-css'
 		href="{{ asset('assets/clients/wp-content/plugins/woocommerce/assets/client/blocks/wc-blocks3a56.css?ver=wc-9.8.1')}}"
@@ -1130,7 +1129,7 @@
 	</script>
 	<script src="{{ asset('assets/clients/wp-content/plugins/elementor/assets/js/frontend.min87cc.js?ver=3.28.3')}}"
 		id="elementor-frontend-js"></script>
-	<script src=id="rs-initialisation-scripts">
+	<script id="rs-initialisation-scripts">
 		var tpj = jQuery;
 
 		var revapi2;
@@ -1200,7 +1199,6 @@
 	</script>
 	<script src="{{ asset('assets/clients/wp-includes/js/custom.js')}}"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/jquery-toastify@1.1.0/jquery.toastify.js"></script>
 </body>
 
 

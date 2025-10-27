@@ -966,7 +966,8 @@
     <script src="{{ asset('assets/clients/wp-content/plugins/elementor/assets/js/frontend.min87cc.js?ver=3.28.3') }}"
         id="elementor-frontend-js"></script>
     {{-- JQuery --}}
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    {{--
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script> --}}
     {{-- JQuery toastify --}}
     <script src="https://cdn.jsdelivr.net/npm/jquery-toastify@1.1.0/jquery.toastify.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
