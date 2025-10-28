@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Clients\AccountController;
 use App\Http\Controllers\Clients\AuthController;
 use App\Http\Controllers\Clients\ForgotPasswordController;
 use App\Http\Controllers\Clients\ResetPasswordController;
@@ -48,4 +49,18 @@ Route::get('/activate/{activationToken}', [AuthController::class, 'activate'])->
 
 Route::middleware('auth.custom')->group(function () {
     Route::get('/logout', [AuthController::class, 'logout'])->name('logout');
+    Route::prefix('account')->group(function () {
+        Route::get('/', [AccountController::class, 'index'])->name('account');
+        
+        // Profile management routes
+        Route::put('/update-profile', [AccountController::class, 'update'])->name('account.update');
+        Route::put('/update-contact', [AccountController::class, 'updateContact'])->name('account.update-contact');
+        Route::put('/change-password', [AccountController::class, 'changePassword'])->name('account.change-password');
+        
+        // Address management routes
+        Route::post('/add-address', [AccountController::class, 'addAddress'])->name('account.add-address');
+        Route::put('/update-address/{id}', [AccountController::class, 'updateAddress'])->name('account.update-address');
+        Route::delete('/delete-address/{id}', [AccountController::class, 'deleteAddress'])->name('account.delete-address');
+        Route::put('/set-default-address/{id}', [AccountController::class, 'setDefaultAddress'])->name('account.set-default-address');
+    });
 });

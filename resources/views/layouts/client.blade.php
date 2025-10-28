@@ -16,6 +16,7 @@
     <link rel="shortcut icon" href="{{ asset('assets/clients/wp-content/uploads/2024/04/favicon.png') }}" />
     <title>@yield('title')</title>
     <meta name='robots' content='max-image-preview:large' />
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     <style>
         img:is([sizes="auto" i], [sizes^="auto," i]) {
             contain-intrinsic-size: 3000px 1500px
@@ -590,12 +591,12 @@
     </style>
     <meta name="generator"
         content="Powered by Slider Revolution 6.6.18 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface." />
-    <link rel="icon" href="{{ asset('assets/clients/wp-content/uploads/2024/04/favicon-100x100.png"')}} sizes="
-        32x32" />
+    <link rel="icon" href="{{ asset('assets/clients/wp-content/uploads/2024/04/favicon-100x100.png') }}"
+        sizes="32x32" />
     <link rel="icon" href="{{ asset('assets/clients/wp-content/uploads/2024/04/favicon.png') }}" sizes="192x192" />
     <link rel="apple-touch-icon" href="{{ asset('assets/clients/wp-content/uploads/2024/04/favicon.png') }}" />
     <meta name="msapplication-TileImage"
-        content="https://seabite.peacefulqode.in/wp-content/uploads/2024/04/favicon.png" />
+        content="{{ asset('assets/clients/wp-content/uploads/2024/04/favicon.png') }}" />
     <script>function setREVStartSize(e) {
             //window.requestAnimationFrame(function() {
             window.RSIW = window.RSIW === undefined ? window.innerWidth : window.RSIW;
@@ -649,6 +650,10 @@
         /** Mega Menu CSS: fs **/
     </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+
+    <!-- Import Custom CSS -->
+    <link rel="stylesheet"
+        href="{{ asset('assets/clients/wp-content/plugins/revslider/public/assets/css/custom.css') }}">
 
 </head>
 
@@ -969,7 +974,6 @@
     {{--
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script> --}}
     {{-- JQuery toastify --}}
-    <script src="https://cdn.jsdelivr.net/npm/jquery-toastify@1.1.0/jquery.toastify.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
     {{-- Javascript --}}
     <script src="{{ asset('assets/clients/wp-includes/js/custom.js')}}"></script>

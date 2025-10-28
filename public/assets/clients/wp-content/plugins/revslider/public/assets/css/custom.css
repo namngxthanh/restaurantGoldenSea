@@ -1,0 +1,92 @@
+.profile-pic-container {
+    position: relative;
+    display: inline-block;
+}
+.profile-pic {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #ddd;
+    cursor: pointer;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+/* Avatar overlay action */
+.profile-pic-container .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.45);
+    color: #fff;
+    font-weight: 600;
+    font-size: 14px;
+    border-radius: 50%;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    pointer-events: none;
+    text-transform: uppercase;
+}
+.profile-pic-container:hover .overlay {
+    opacity: 1;
+}
+.profile-pic-container:hover .profile-pic {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
+}
+
+/* Cards + tables subtle polish */
+.card {
+    border-radius: 12px;
+}
+.card .card-title {
+    font-weight: 700;
+}
+
+.table th,
+.table td {
+    vertical-align: middle;
+}
+.table thead th {
+    background: #f7f7f7;
+    font-weight: 600;
+}
+
+/* Form improvements */
+.form-control {
+    border-radius: 10px;
+    min-height: 44px;
+}
+.form-label {
+    font-weight: 600;
+}
+
+/* Responsive tweaks */
+@media (max-width: 991.98px) {
+    .ltn__tab-menu-list .nav a {
+        display: block;
+        margin-bottom: 8px;
+    }
+}
+@media (max-width: 575.98px) {
+    .profile-pic {
+        width: 120px;
+        height: 120px;
+    }
+    .btn {
+        width: 100%;
+    }
+    .card .card-body {
+        padding: 16px;
+    }
+    .table th,
+    .table td {
+        white-space: nowrap;
+        font-size: 14px;
+    }
+}

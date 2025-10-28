@@ -15,6 +15,7 @@
 	<link rel="shortcut icon" href="{{ asset('assets/clients/wp-content/uploads/2024/04/favicon.png')}}" />
 	<title>@yield('title')</title>
 	<meta name='robots' content='max-image-preview:large' />
+	<meta name="csrf-token" content="{{ csrf_token() }}">
 	<style>
 		img:is([sizes="auto" i], [sizes^="auto," i]) {
 			contain-intrinsic-size: 3000px 1500px
@@ -663,6 +664,9 @@
 		/** Mega Menu CSS: fs **/
 	</style>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+	<!-- Import Custom CSS -->
+	<link rel="stylesheet"
+		href="{{ asset('assets/clients/wp-content/plugins/revslider/public/assets/css/custom.css') }}">
 </head>
 
 <body

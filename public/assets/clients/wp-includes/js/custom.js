@@ -1,4 +1,4 @@
-$(document).ready(function () {
+jQuery(document).ready(function ($) {
     /********************** PAGE LOGIN, REGISTER **********************/
     // * Validate FORM HANDLING
     $("#register").submit(function (e) {
@@ -88,5 +88,69 @@ $(document).ready(function () {
             e.preventDefault();
             // return;
         }
+    });
+
+    /********************** PAGE ACCOUNT **********************/
+    // * Validate FORM HANDLING
+    // * When clicking on the image => open input file
+    $(".profile-pic").click(function () {
+        $("#avatar").click();
+    });
+
+    // * When changing the image => show preview
+    $("#avatar").change(function () {
+        const reader = new FileReader();
+        reader.onload = function (e) {
+            $("#preview-image").attr("src", e.target.result);
+        };
+        reader.readAsDataURL(this.files[0]);
+    });
+    $("#update-account").submit(function (e) {
+        e.preventDefault();
+        let formData = new FormData(this);
+        let urlUpdate = $(this).attr("action");
+        let errorMessage = "";
+        console.log(formData);
+        $.ajaxSetup({
+            headers: {
+                "X-CSRF-TOKEN": $('meta[name="csrf-token"]').attr("content"),
+            },
+        });
+        $.ajax({
+            url: urlUpdate,
+            type: "POST",
+            data: formData,
+            processData: false,
+            contentType: false,
+            beforeSend: function () {
+                $(".btn-wrapper button")
+                    .text("Đang cập nhật thông tin...", "Chờ xíu")
+                    .attr("disabled", true);
+            },
+            success: function (response) {
+                if (response.success) {
+                    toastr.success(response.message, "Thành công");
+                    // * Update new avatar
+                    if (response.avatar) {
+                        $("#preview-image").attr("src", response.avatar);
+                    }
+                } else {
+                    toastr.error(response.message, "Có lỗi rồi");
+                }
+            },
+
+            error: function (xhr, status, error) {
+                let errorMessage = xhr.responseJSON.errors;
+                $.each(errorMessage, function (key, value) {
+                    errorMessage += value[0] + "<br>";
+                });
+                toastr.error(errorMessage, "Có lỗi rồi");
+            },
+            complete: function () {
+                $(".btn-wrapper button")
+                    .text("Lưu thay đổi")
+                    .attr("disabled", false);
+            },
+        });
     });
 });

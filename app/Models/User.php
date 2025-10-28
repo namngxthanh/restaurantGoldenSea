@@ -58,4 +58,8 @@ class User extends Authenticatable
     {
         return $this->hasMany(related: Order::class);
     }
+    public function getAvatarUrlAttribute(): string
+    {
+        return $this->avatar ? asset('storage/' . $this->avatar) : asset('storage/uploads/users/avatars/default_avatar.png');
+    }
 }
