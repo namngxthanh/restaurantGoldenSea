@@ -492,9 +492,10 @@
 	<link rel='stylesheet' id='fontawesome-css'
 		href='{{ asset('assets/clients/wp-content/themes/seabite/assets/css/font-awesome/css/fontawesome.min05c8.css?ver=5.13.0')}}'
 		media='all' />
+	{{--
 	<link rel='stylesheet' id='themify-icons-css' href='{{ asset('
 		assets/clients/wp-content/themes/seabite/assets/css/fonts/themify-icons/themify-icons001e.css?ver=2.0.0')}}'
-		media='all' />
+		media='all' /> --}}
 	<link rel='stylesheet' id='ionicons-icon-css'
 		href='{{ asset('assets/clients/wp-content/themes/seabite/assets/css/fonts/ionicons/ionicons.min001e.css?ver=2.0.0')}}'
 		media='all' />
@@ -507,8 +508,10 @@
 	<link rel='stylesheet' id='elementor-gf-local-cormorantgaramond-css' href='{{
 	asset('assets/clients/wp-content/uploads/elementor/google-fonts/css/cormorantgaramond85cf.css?ver=1744955943')}}'
 		media='all' />
+
 	<link rel='stylesheet' id='elementor-gf-local-jost-css' href='{{ asset('
 		assets/clients/wp-content/uploads/elementor/google-fonts/css/jost244f.css?ver=1744955944')}}' media='all' />
+
 	<script src="{{ asset('assets/clients/wp-includes/js/jquery/jquery.minf43b.js?ver=3.7.1')}}"
 		id="jquery-core-js"></script>
 	<script src="{{ asset('assets/clients/wp-includes/js/jquery/jquery-migrate.min5589.js?ver=3.4.1')}}"
@@ -604,61 +607,59 @@
 			}
 		}
 	</style>
-	<meta name="generator"
-		content="Powered by Slider Revolution 6.6.18 - responsive, Mobile-Friendly Slider Plugin with comfortable drag and drop interface." />
 	<link rel="icon" href="{{ asset('assets/clients/wp-content/uploads/2024/04/favicon-100x100.png')}}" sizes="32x32" />
 	<link rel="icon" href="{{ asset('assets/clients/wp-content/uploads/2024/04/favicon.png')}}" sizes="192x192" />
 	<link rel="apple-touch-icon" href="{{ asset('assets/clients/wp-content/uploads/2024/04/favicon.png')}}" />
 	<meta name="msapplication-TileImage"
 		content="{{ asset('assets/clients/wp-content/uploads/2024/04/favicon.png')}}" />
 	<script>function setREVStartSize(e) {
-			//window.requestAnimationFrame(function() {
-			window.RSIW = window.RSIW === undefined ? window.innerWidth : window.RSIW;
-			window.RSIH = window.RSIH === undefined ? window.innerHeight : window.RSIH;
-			try {
-				var pw = document.getElementById(e.c).parentNode.offsetWidth,
-					newh;
-				pw = pw === 0 || isNaN(pw) || (e.l == "fullwidth" || e.layout == "fullwidth") ? window.RSIW : pw;
-				e.tabw = e.tabw === undefined ? 0 : parseInt(e.tabw);
-				e.thumbw = e.thumbw === undefined ? 0 : parseInt(e.thumbw);
-				e.tabh = e.tabh === undefined ? 0 : parseInt(e.tabh);
-				e.thumbh = e.thumbh === undefined ? 0 : parseInt(e.thumbh);
-				e.tabhide = e.tabhide === undefined ? 0 : parseInt(e.tabhide);
-				e.thumbhide = e.thumbhide === undefined ? 0 : parseInt(e.thumbhide);
-				e.mh = e.mh === undefined || e.mh == "" || e.mh === "auto" ? 0 : parseInt(e.mh, 0);
-				if (e.layout === "fullscreen" || e.l === "fullscreen")
-					newh = Math.max(e.mh, window.RSIH);
-				else {
-					e.gw = Array.isArray(e.gw) ? e.gw : [e.gw];
-					for (var i in e.rl) if (e.gw[i] === undefined || e.gw[i] === 0) e.gw[i] = e.gw[i - 1];
-					e.gh = e.el === undefined || e.el === "" || (Array.isArray(e.el) && e.el.length == 0) ? e.gh : e.el;
-					e.gh = Array.isArray(e.gh) ? e.gh : [e.gh];
-					for (var i in e.rl) if (e.gh[i] === undefined || e.gh[i] === 0) e.gh[i] = e.gh[i - 1];
+			window.requestAnimationFrame(function () {
+				window.RSIW = window.RSIW === undefined ? window.innerWidth : window.RSIW;
+				window.RSIH = window.RSIH === undefined ? window.innerHeight : window.RSIH;
+				try {
+					var pw = document.getElementById(e.c).parentNode.offsetWidth,
+						newh;
+					pw = pw === 0 || isNaN(pw) || (e.l == "fullwidth" || e.layout == "fullwidth") ? window.RSIW : pw;
+					e.tabw = e.tabw === undefined ? 0 : parseInt(e.tabw);
+					e.thumbw = e.thumbw === undefined ? 0 : parseInt(e.thumbw);
+					e.tabh = e.tabh === undefined ? 0 : parseInt(e.tabh);
+					e.thumbh = e.thumbh === undefined ? 0 : parseInt(e.thumbh);
+					e.tabhide = e.tabhide === undefined ? 0 : parseInt(e.tabhide);
+					e.thumbhide = e.thumbhide === undefined ? 0 : parseInt(e.thumbhide);
+					e.mh = e.mh === undefined || e.mh == "" || e.mh === "auto" ? 0 : parseInt(e.mh, 0);
+					if (e.layout === "fullscreen" || e.l === "fullscreen")
+						newh = Math.max(e.mh, window.RSIH);
+					else {
+						e.gw = Array.isArray(e.gw) ? e.gw : [e.gw];
+						for (var i in e.rl) if (e.gw[i] === undefined || e.gw[i] === 0) e.gw[i] = e.gw[i - 1];
+						e.gh = e.el === undefined || e.el === "" || (Array.isArray(e.el) && e.el.length == 0) ? e.gh : e.el;
+						e.gh = Array.isArray(e.gh) ? e.gh : [e.gh];
+						for (var i in e.rl) if (e.gh[i] === undefined || e.gh[i] === 0) e.gh[i] = e.gh[i - 1];
 
-					var nl = new Array(e.rl.length),
-						ix = 0,
-						sl;
-					e.tabw = e.tabhide >= pw ? 0 : e.tabw;
-					e.thumbw = e.thumbhide >= pw ? 0 : e.thumbw;
-					e.tabh = e.tabhide >= pw ? 0 : e.tabh;
-					e.thumbh = e.thumbhide >= pw ? 0 : e.thumbh;
-					for (var i in e.rl) nl[i] = e.rl[i] < window.RSIW ? 0 : e.rl[i];
-					sl = nl[0];
-					for (var i in nl) if (sl > nl[i] && nl[i] > 0) { sl = nl[i]; ix = i; }
-					var m = pw > (e.gw[ix] + e.tabw + e.thumbw) ? 1 : (pw - (e.tabw + e.thumbw)) / (e.gw[ix]);
-					newh = (e.gh[ix] * m) + (e.tabh + e.thumbh);
+						var nl = new Array(e.rl.length),
+							ix = 0,
+							sl;
+						e.tabw = e.tabhide >= pw ? 0 : e.tabw;
+						e.thumbw = e.thumbhide >= pw ? 0 : e.thumbw;
+						e.tabh = e.tabhide >= pw ? 0 : e.tabh;
+						e.thumbh = e.thumbhide >= pw ? 0 : e.thumbh;
+						for (var i in e.rl) nl[i] = e.rl[i] < window.RSIW ? 0 : e.rl[i];
+						sl = nl[0];
+						for (var i in nl) if (sl > nl[i] && nl[i] > 0) { sl = nl[i]; ix = i; }
+						var m = pw > (e.gw[ix] + e.tabw + e.thumbw) ? 1 : (pw - (e.tabw + e.thumbw)) / (e.gw[ix]);
+						newh = (e.gh[ix] * m) + (e.tabh + e.thumbh);
+					}
+					var el = document.getElementById(e.c);
+					if (el !== null && el) el.style.height = newh + "px";
+					el = document.getElementById(e.c + "_wrapper");
+					if (el !== null && el) {
+						el.style.height = newh + "px";
+						el.style.display = "block";
+					}
+				} catch (e) {
+					console.log("Failure at Presize of Slider:" + e)
 				}
-				var el = document.getElementById(e.c);
-				if (el !== null && el) el.style.height = newh + "px";
-				el = document.getElementById(e.c + "_wrapper");
-				if (el !== null && el) {
-					el.style.height = newh + "px";
-					el.style.display = "block";
-				}
-			} catch (e) {
-				console.log("Failure at Presize of Slider:" + e)
-			}
-			//});
+			});
 		};</script>
 	<style>
 		/** Mega Menu CSS: fs **/
@@ -671,177 +672,181 @@
 
 <body
 	class="home wp-singular page-template-default page page-id-268 wp-theme-seabite theme-seabite woocommerce-no-js mega-menu-primary mega-menu-landing seabite-front-page page-two-column elementor-default elementor-kit-7 elementor-page elementor-page-268">
-	<!-- loading -->
-	<div id="pt-loading">
-		<div id="pt-loading-center">
+	@include('clients.partials.header_home')
+	<main>
+		<!-- loading -->
+		<div id="pt-loading">
+			<div id="pt-loading-center">
 
-			<img src="{{ asset('assets/clients/wp-content/uploads/2024/03/logo.png')}}" alt="loading">
+				<img src="{{ asset('assets/clients/wp-content/uploads/2024/03/logo.png')}}" alt="loading">
 
+			</div>
 		</div>
-	</div>
 
-	<div id="page" class="site">
-		@include('clients.partials.header_home')
-		<main>
+		<div id="page" class="site">
+
 			@yield('content')
-		</main>
-		@include('clients.partials.footer_home')
-		<div class="peacefulthemes-contain">
-			<div class="site-content-contain">
-				<a class="skip-link screen-reader-text" href="#content"></a>
-				<div class="pt-background-overlay"></div>
-				<div class="pt-sidebar">
 
-					<div class="pt-sidebar-block mCustomScrollbar">
-						<div class="pt-sidebar-header">
-							<a class="navbar-brand" href="{{ asset('assets/clients/index.html')}}">
+			<div class="peacefulthemes-contain">
+				<div class="site-content-contain">
+					<a class="skip-link screen-reader-text" href="#content"></a>
+					<div class="pt-background-overlay"></div>
+					<div class="pt-sidebar">
 
-								<img src="{{ asset('assets/clients/wp-content/uploads/2024/03/logo.png')}}"
-									class="pt-sidebar-logo" alt="seabite-sidebar-logo">
-							</a>
-							<div class="pt-close-btn">
-								<a class="pt-close" href="javascript:void(0)">
-									<i class="ion-android-close"></i>
+						<div class="pt-sidebar-block mCustomScrollbar">
+							<div class="pt-sidebar-header">
+								<a class="navbar-brand" href="{{ url('/') }}">
+
+									<img src="{{ asset('assets/clients/wp-content/uploads/2024/03/logo.png')}}"
+										class="pt-sidebar-logo" alt="seabite-sidebar-logo">
 								</a>
+								<div class="pt-close-btn">
+									<a class="pt-close" href="javascript:void(0)">
+										<i class="ion-android-close"></i>
+									</a>
+								</div>
 							</div>
-						</div>
-						<div class="pt-sidebar-title">
-							<h5>Chăm sóc và phục vụ tận tâm cho trải nghiệm ẩm thực hải sản</h5>
-						</div>
-						<div class="pt-sidebar-content">
-							<p>Có rất nhiều phong cách và cách thưởng thức hải sản khác nhau, nhưng điều chúng tôi luôn
-								giữ vững là sự tận tâm và chất lượng trong từng món ăn phục vụ quý khách.</p>
-						</div>
-						<div class="pt-sidebar-contact">
-							<h3 class="pt-contact-heading">Liên hệ với chúng tôi</h3>
-						</div>
+							<div class="pt-sidebar-title">
+								<h5>Chăm sóc và phục vụ tận tâm cho trải nghiệm ẩm thực hải sản</h5>
+							</div>
+							<div class="pt-sidebar-content">
+								<p>Có rất nhiều phong cách và cách thưởng thức hải sản khác nhau, nhưng điều chúng tôi
+									luôn
+									giữ vững là sự tận tâm và chất lượng trong từng món ăn phục vụ quý khách.</p>
+							</div>
+							<div class="pt-sidebar-contact">
+								<h3 class="pt-contact-heading">Liên hệ với chúng tôi</h3>
+							</div>
 
-						<ul class="pt-contact">
-							<li>
-								<a href="tel:+1900166888">
-									<svg width="18" height="18" viewBox="0 0 20 20" fill="none"
+							<ul class="pt-contact">
+								<li>
+									<a href="tel:+1900166888">
+										<svg width="18" height="18" viewBox="0 0 20 20" fill="none"
+											xmlns="{{ asset('assets/www.w3.org/2000/svg.html') }}">
+											<g clip-path="url(#clip0_366_73)">
+												<path
+													d="M15.8054 12.3893C15.396 11.9629 14.9021 11.735 14.3787 11.735C13.8595 11.735 13.3614 11.9587 12.9351 12.3851L11.6012 13.7147C11.4914 13.6556 11.3817 13.6007 11.2761 13.5459C11.1242 13.4699 10.9807 13.3981 10.8583 13.3221C9.6088 12.5286 8.47331 11.4944 7.38426 10.1563C6.85662 9.48935 6.50204 8.92794 6.24455 8.35809C6.59069 8.0415 6.91149 7.71226 7.22386 7.39567C7.34205 7.27748 7.46024 7.15506 7.57843 7.03687C8.46487 6.15043 8.46487 5.00229 7.57843 4.11585L6.42606 2.96348C6.29521 2.83262 6.16013 2.69754 6.0335 2.56247C5.78023 2.30076 5.5143 2.03061 5.23992 1.77734C4.83047 1.37211 4.34082 1.15683 3.82584 1.15683C3.31086 1.15683 2.81277 1.37211 2.39066 1.77734C2.38644 1.78156 2.38644 1.78156 2.38221 1.78578L0.947028 3.23363C0.406722 3.77393 0.0985794 4.43243 0.0310412 5.19646C-0.0702661 6.42903 0.292752 7.57718 0.571347 8.32854C1.25517 10.1732 2.27669 11.8827 3.80052 13.7147C5.64937 15.9224 7.87391 17.6657 10.415 18.894C11.3859 19.3542 12.6818 19.8987 14.1296 19.9915C14.2183 19.9958 14.3111 20 14.3956 20C15.3707 20 16.1896 19.6496 16.8312 18.9531C16.8354 18.9447 16.8438 18.9405 16.848 18.932C17.0675 18.6661 17.3208 18.4255 17.5867 18.168C17.7683 17.9949 17.954 17.8134 18.1355 17.6235C18.5534 17.1887 18.7729 16.6822 18.7729 16.163C18.7729 15.6396 18.5492 15.1372 18.1228 14.7151L15.8054 12.3893ZM17.3166 16.8341C17.3124 16.8341 17.3124 16.8384 17.3166 16.8341C17.152 17.0114 16.9831 17.1718 16.8016 17.3491C16.5272 17.6108 16.2486 17.8852 15.9869 18.1933C15.5606 18.6492 15.0583 18.8645 14.3998 18.8645C14.3365 18.8645 14.2689 18.8645 14.2056 18.8603C12.9519 18.7801 11.7869 18.2904 10.9131 17.8725C8.52397 16.7159 6.42606 15.0739 4.68273 12.9929C3.24333 11.258 2.28091 9.65398 1.64352 7.93175C1.25095 6.88069 1.10743 6.06179 1.17075 5.28932C1.21296 4.79545 1.40291 4.386 1.75327 4.03565L3.19267 2.59624C3.39951 2.40207 3.61901 2.29654 3.83429 2.29654C4.10022 2.29654 4.3155 2.45694 4.45057 2.59202C4.45479 2.59624 4.45901 2.60046 4.46323 2.60468C4.72072 2.84528 4.96555 3.09433 5.22304 3.36026C5.35389 3.49534 5.48897 3.63042 5.62405 3.76971L6.77642 4.92208C7.22386 5.36952 7.22386 5.7832 6.77642 6.23064C6.654 6.35305 6.53581 6.47546 6.4134 6.59365C6.05882 6.95667 5.72113 7.29436 5.35389 7.62361C5.34545 7.63205 5.33701 7.63627 5.33279 7.64472C4.96977 8.00773 5.03731 8.36231 5.11329 8.60291C5.11751 8.61558 5.12173 8.62824 5.12595 8.6409C5.42565 9.36694 5.84777 10.0508 6.48938 10.8654L6.4936 10.8697C7.65864 12.3049 8.88699 13.4235 10.242 14.2803C10.415 14.3901 10.5923 14.4787 10.7612 14.5632C10.9131 14.6391 11.0566 14.7109 11.1791 14.7869C11.1959 14.7953 11.2128 14.808 11.2297 14.8164C11.3732 14.8882 11.5083 14.922 11.6476 14.922C11.998 14.922 12.2175 14.7025 12.2892 14.6307L13.7329 13.1871C13.8764 13.0436 14.1043 12.8705 14.3702 12.8705C14.632 12.8705 14.8472 13.0351 14.9781 13.1786C14.9823 13.1828 14.9823 13.1828 14.9865 13.1871L17.3124 15.5129C17.7472 15.9435 17.7472 16.3867 17.3166 16.8341Z"
+													fill="#48B6F1" />
+												<path
+													d="M10.807 4.75747C11.9129 4.9432 12.9175 5.46662 13.7195 6.26863C14.5216 7.07065 15.0408 8.07528 15.2307 9.18122C15.2771 9.45981 15.5177 9.65398 15.7921 9.65398C15.8259 9.65398 15.8554 9.64976 15.8892 9.64554C16.2016 9.59489 16.4084 9.29941 16.3577 8.98705C16.1298 7.64894 15.4966 6.42904 14.53 5.4624C13.5634 4.49576 12.3434 3.86258 11.0053 3.63464C10.693 3.58399 10.4017 3.79083 10.3468 4.09897C10.292 4.40711 10.4946 4.70681 10.807 4.75747Z"
+													fill="#48B6F1" />
+												<path
+													d="M19.9756 8.82242C19.6 6.61899 18.5616 4.61395 16.966 3.01836C15.3704 1.42277 13.3653 0.384369 11.1619 0.00868772C10.8538 -0.0461871 10.5625 0.16487 10.5076 0.473013C10.457 0.785377 10.6638 1.07664 10.9762 1.13151C12.9432 1.46498 14.7372 2.39785 16.1639 3.82037C17.5907 5.24712 18.5193 7.0411 18.8528 9.00815C18.8992 9.28675 19.1398 9.48092 19.4142 9.48092C19.448 9.48092 19.4775 9.4767 19.5113 9.47248C19.8195 9.42604 20.0305 9.13056 19.9756 8.82242Z"
+													fill="#48B6F1" />
+											</g>
+											<defs>
+												<clipPath id="clip0_366_73">
+													<rect width="20" height="20" fill="white" />
+												</clipPath>
+											</defs>
+										</svg> <span>089.6666.825</span>
+									</a>
+								</li>
+								<li>
+									<a href="mailto:info@goldensea.com">
+										<svg width="18" height="18" viewBox="0 0 20 20" fill="none"
+											xmlns="{{ asset('assets/www.w3.org/2000/svg.html') }}">
+											<path
+												d="M18.2422 2.96875H1.75781C0.790547 2.96875 0 3.75582 0 4.72656V15.2734C0 16.2445 0.791055 17.0312 1.75781 17.0312H18.2422C19.2095 17.0312 20 16.2442 20 15.2734V4.72656C20 3.75559 19.2091 2.96875 18.2422 2.96875ZM17.9723 4.14062C17.4039 4.71082 10.7283 11.4082 10.4541 11.6834C10.225 11.9131 9.77512 11.9133 9.54594 11.6834L2.02773 4.14062H17.9723ZM1.17188 15.058V4.94199L6.21348 10L1.17188 15.058ZM2.02773 15.8594L7.04078 10.83L8.71598 12.5107C9.40246 13.1994 10.5978 13.1991 11.2841 12.5107L12.9593 10.83L17.9723 15.8594H2.02773ZM18.8281 15.058L13.7865 10L18.8281 4.94199V15.058Z"
+												fill="#48B6F1" />
+										</svg> <span>info@goldensea.com</span></a>
+								</li>
+								<li>
+
+									<svg xmlns="{{ asset('assets/www.w3.org/2000/svg.html') }}" width="18" height="18"
+										viewBox="0 0 20 20" fill="none">
+										<g clip-path="url(#clip0_366_61)">
+											<path
+												d="M9.51246 19.7391C9.62113 19.9021 9.8041 20 10 20C10.1959 20 10.3789 19.9021 10.4875 19.7391C11.8742 17.6591 13.9167 15.0903 15.34 12.4778C16.478 10.3889 17.0312 8.60727 17.0312 7.03125C17.0312 3.15422 13.877 0 10 0C6.12297 0 2.96875 3.15422 2.96875 7.03125C2.96875 8.60727 3.52199 10.3889 4.66004 12.4778C6.08227 15.0883 8.12863 17.6634 9.51246 19.7391ZM10 1.17188C13.2309 1.17188 15.8594 3.80039 15.8594 7.03125C15.8594 8.40641 15.3529 10.0046 14.3109 11.9171C13.0841 14.1691 11.3334 16.4534 10 18.3738C8.66684 16.4537 6.91602 14.1692 5.6891 11.9171C4.64715 10.0046 4.14062 8.40641 4.14062 7.03125C4.14062 3.80039 6.76914 1.17188 10 1.17188Z"
+												fill="#48B6F1"></path>
+											<path
+												d="M10 10.5469C11.9385 10.5469 13.5156 8.96977 13.5156 7.03125C13.5156 5.09273 11.9385 3.51562 10 3.51562C8.06148 3.51562 6.48438 5.09273 6.48438 7.03125C6.48438 8.96977 8.06148 10.5469 10 10.5469ZM10 4.6875C11.2923 4.6875 12.3438 5.73891 12.3438 7.03125C12.3438 8.32359 11.2923 9.375 10 9.375C8.70766 9.375 7.65625 8.32359 7.65625 7.03125C7.65625 5.73891 8.70766 4.6875 10 4.6875Z"
+												fill="#48B6F1"></path>
+										</g>
+										<defs>
+											<clipPath id="clip0_366_61">
+												<rect width="20" height="20" fill="white"></rect>
+											</clipPath>
+										</defs>
+									</svg> <span>
+										885 Cống quỳnh, P.Võ Thị Sáu, Q3, TP.HCM </span>
+								</li>
+								<li>
+									<svg width="28" height="29" viewBox="0 0 28 29" fill="none"
 										xmlns="{{ asset('assets/www.w3.org/2000/svg.html') }}">
-										<g clip-path="url(#clip0_366_73)">
+										<g clip-path="url(#clip0_329_6743)">
 											<path
-												d="M15.8054 12.3893C15.396 11.9629 14.9021 11.735 14.3787 11.735C13.8595 11.735 13.3614 11.9587 12.9351 12.3851L11.6012 13.7147C11.4914 13.6556 11.3817 13.6007 11.2761 13.5459C11.1242 13.4699 10.9807 13.3981 10.8583 13.3221C9.6088 12.5286 8.47331 11.4944 7.38426 10.1563C6.85662 9.48935 6.50204 8.92794 6.24455 8.35809C6.59069 8.0415 6.91149 7.71226 7.22386 7.39567C7.34205 7.27748 7.46024 7.15506 7.57843 7.03687C8.46487 6.15043 8.46487 5.00229 7.57843 4.11585L6.42606 2.96348C6.29521 2.83262 6.16013 2.69754 6.0335 2.56247C5.78023 2.30076 5.5143 2.03061 5.23992 1.77734C4.83047 1.37211 4.34082 1.15683 3.82584 1.15683C3.31086 1.15683 2.81277 1.37211 2.39066 1.77734C2.38644 1.78156 2.38644 1.78156 2.38221 1.78578L0.947028 3.23363C0.406722 3.77393 0.0985794 4.43243 0.0310412 5.19646C-0.0702661 6.42903 0.292752 7.57718 0.571347 8.32854C1.25517 10.1732 2.27669 11.8827 3.80052 13.7147C5.64937 15.9224 7.87391 17.6657 10.415 18.894C11.3859 19.3542 12.6818 19.8987 14.1296 19.9915C14.2183 19.9958 14.3111 20 14.3956 20C15.3707 20 16.1896 19.6496 16.8312 18.9531C16.8354 18.9447 16.8438 18.9405 16.848 18.932C17.0675 18.6661 17.3208 18.4255 17.5867 18.168C17.7683 17.9949 17.954 17.8134 18.1355 17.6235C18.5534 17.1887 18.7729 16.6822 18.7729 16.163C18.7729 15.6396 18.5492 15.1372 18.1228 14.7151L15.8054 12.3893ZM17.3166 16.8341C17.3124 16.8341 17.3124 16.8384 17.3166 16.8341C17.152 17.0114 16.9831 17.1718 16.8016 17.3491C16.5272 17.6108 16.2486 17.8852 15.9869 18.1933C15.5606 18.6492 15.0583 18.8645 14.3998 18.8645C14.3365 18.8645 14.2689 18.8645 14.2056 18.8603C12.9519 18.7801 11.7869 18.2904 10.9131 17.8725C8.52397 16.7159 6.42606 15.0739 4.68273 12.9929C3.24333 11.258 2.28091 9.65398 1.64352 7.93175C1.25095 6.88069 1.10743 6.06179 1.17075 5.28932C1.21296 4.79545 1.40291 4.386 1.75327 4.03565L3.19267 2.59624C3.39951 2.40207 3.61901 2.29654 3.83429 2.29654C4.10022 2.29654 4.3155 2.45694 4.45057 2.59202C4.45479 2.59624 4.45901 2.60046 4.46323 2.60468C4.72072 2.84528 4.96555 3.09433 5.22304 3.36026C5.35389 3.49534 5.48897 3.63042 5.62405 3.76971L6.77642 4.92208C7.22386 5.36952 7.22386 5.7832 6.77642 6.23064C6.654 6.35305 6.53581 6.47546 6.4134 6.59365C6.05882 6.95667 5.72113 7.29436 5.35389 7.62361C5.34545 7.63205 5.33701 7.63627 5.33279 7.64472C4.96977 8.00773 5.03731 8.36231 5.11329 8.60291C5.11751 8.61558 5.12173 8.62824 5.12595 8.6409C5.42565 9.36694 5.84777 10.0508 6.48938 10.8654L6.4936 10.8697C7.65864 12.3049 8.88699 13.4235 10.242 14.2803C10.415 14.3901 10.5923 14.4787 10.7612 14.5632C10.9131 14.6391 11.0566 14.7109 11.1791 14.7869C11.1959 14.7953 11.2128 14.808 11.2297 14.8164C11.3732 14.8882 11.5083 14.922 11.6476 14.922C11.998 14.922 12.2175 14.7025 12.2892 14.6307L13.7329 13.1871C13.8764 13.0436 14.1043 12.8705 14.3702 12.8705C14.632 12.8705 14.8472 13.0351 14.9781 13.1786C14.9823 13.1828 14.9823 13.1828 14.9865 13.1871L17.3124 15.5129C17.7472 15.9435 17.7472 16.3867 17.3166 16.8341Z"
+												d="M14 0.709961C6.2913 0.709961 0 7.0017 0 14.71C0 22.4187 6.29174 28.71 14 28.71C21.7087 28.71 28 22.4182 28 14.71C28 7.00127 21.7083 0.709961 14 0.709961ZM14 27.0693C7.18501 27.0693 1.64062 21.525 1.64062 14.71C1.64062 7.89497 7.18501 2.35059 14 2.35059C20.815 2.35059 26.3594 7.89497 26.3594 14.71C26.3594 21.525 20.815 27.0693 14 27.0693Z"
 												fill="#48B6F1" />
 											<path
-												d="M10.807 4.75747C11.9129 4.9432 12.9175 5.46662 13.7195 6.26863C14.5216 7.07065 15.0408 8.07528 15.2307 9.18122C15.2771 9.45981 15.5177 9.65398 15.7921 9.65398C15.8259 9.65398 15.8554 9.64976 15.8892 9.64554C16.2016 9.59489 16.4084 9.29941 16.3577 8.98705C16.1298 7.64894 15.4966 6.42904 14.53 5.4624C13.5634 4.49576 12.3434 3.86258 11.0053 3.63464C10.693 3.58399 10.4017 3.79083 10.3468 4.09897C10.292 4.40711 10.4946 4.70681 10.807 4.75747Z"
+												d="M7.03906 22.4908C7.49211 22.4908 7.85937 22.1236 7.85937 21.6705C7.85937 21.2175 7.49211 20.8502 7.03906 20.8502C6.58602 20.8502 6.21875 21.2175 6.21875 21.6705C6.21875 22.1236 6.58602 22.4908 7.03906 22.4908Z"
 												fill="#48B6F1" />
 											<path
-												d="M19.9756 8.82242C19.6 6.61899 18.5616 4.61395 16.966 3.01836C15.3704 1.42277 13.3653 0.384369 11.1619 0.00868772C10.8538 -0.0461871 10.5625 0.16487 10.5076 0.473013C10.457 0.785377 10.6638 1.07664 10.9762 1.13151C12.9432 1.46498 14.7372 2.39785 16.1639 3.82037C17.5907 5.24712 18.5193 7.0411 18.8528 9.00815C18.8992 9.28675 19.1398 9.48092 19.4142 9.48092C19.448 9.48092 19.4775 9.4767 19.5113 9.47248C19.8195 9.42604 20.0305 9.13056 19.9756 8.82242Z"
+												d="M20.9609 8.5697C21.414 8.5697 21.7812 8.20244 21.7812 7.74939C21.7812 7.29634 21.414 6.92908 20.9609 6.92908C20.5079 6.92908 20.1406 7.29634 20.1406 7.74939C20.1406 8.20244 20.5079 8.5697 20.9609 8.5697Z"
+												fill="#48B6F1" />
+											<path
+												d="M6.45902 7.16932C6.13866 7.48968 6.13866 8.00904 6.45902 8.3294C6.77938 8.64976 7.29875 8.64976 7.61911 8.3294C7.93946 8.00904 7.93946 7.48968 7.61911 7.16932C7.2988 6.84896 6.77938 6.84896 6.45902 7.16932Z"
+												fill="#48B6F1" />
+											<path
+												d="M20.3809 21.0905C20.0605 21.4109 20.0605 21.9302 20.3809 22.2506C20.7013 22.571 21.2206 22.571 21.541 22.2506C21.8613 21.9302 21.8613 21.4109 21.541 21.0905C21.2206 20.7702 20.7012 20.7702 20.3809 21.0905Z"
+												fill="#48B6F1" />
+											<path
+												d="M14 7.32715C14.453 7.32715 14.8203 6.95987 14.8203 6.50684V4.86621C14.8203 4.41318 14.453 4.0459 14 4.0459C13.547 4.0459 13.1797 4.41318 13.1797 4.86621V6.50684C13.1797 6.95987 13.547 7.32715 14 7.32715Z"
+												fill="#48B6F1" />
+											<path
+												d="M14 22.0928C13.547 22.0928 13.1797 22.4601 13.1797 22.9131V24.5537C13.1797 25.0067 13.547 25.374 14 25.374C14.453 25.374 14.8203 25.0067 14.8203 24.5537V22.9131C14.8203 22.4601 14.453 22.0928 14 22.0928Z"
+												fill="#48B6F1" />
+											<path
+												d="M6.61719 14.71C6.61719 14.2569 6.24991 13.8896 5.79688 13.8896H4.15625C3.70322 13.8896 3.33594 14.2569 3.33594 14.71C3.33594 15.163 3.70322 15.5303 4.15625 15.5303H5.79688C6.24991 15.5303 6.61719 15.163 6.61719 14.71Z"
+												fill="#48B6F1" />
+											<path
+												d="M21.3828 14.71C21.3828 15.163 21.7501 15.5303 22.2031 15.5303H23.8438C24.2968 15.5303 24.6641 15.163 24.6641 14.71C24.6641 14.2569 24.2968 13.8896 23.8438 13.8896H22.2031C21.7501 13.8896 21.3828 14.2569 21.3828 14.71Z"
+												fill="#48B6F1" />
+											<path
+												d="M14.8203 14.3702V9.78809C14.8203 9.33505 14.453 8.96777 14 8.96777C13.547 8.96777 13.1797 9.33505 13.1797 9.78809V14.71C13.1797 14.9275 13.2661 15.1361 13.42 15.29L18.3419 20.2119C18.6622 20.5322 19.1816 20.5323 19.5019 20.2119C19.8223 19.8915 19.8223 19.3722 19.5019 19.0518L14.8203 14.3702Z"
 												fill="#48B6F1" />
 										</g>
 										<defs>
-											<clipPath id="clip0_366_73">
-												<rect width="20" height="20" fill="white" />
+											<clipPath id="clip0_329_6743">
+												<rect width="28" height="28" fill="white"
+													transform="translate(0 0.709961)" />
 											</clipPath>
 										</defs>
-									</svg> <span>089.6666.825</span>
-								</a>
-							</li>
-							<li>
-								<a href="mailto:info@goldensea.com">
-									<svg width="18" height="18" viewBox="0 0 20 20" fill="none"
-										xmlns="{{ asset('assets/www.w3.org/2000/svg.html') }}">
-										<path
-											d="M18.2422 2.96875H1.75781C0.790547 2.96875 0 3.75582 0 4.72656V15.2734C0 16.2445 0.791055 17.0312 1.75781 17.0312H18.2422C19.2095 17.0312 20 16.2442 20 15.2734V4.72656C20 3.75559 19.2091 2.96875 18.2422 2.96875ZM17.9723 4.14062C17.4039 4.71082 10.7283 11.4082 10.4541 11.6834C10.225 11.9131 9.77512 11.9133 9.54594 11.6834L2.02773 4.14062H17.9723ZM1.17188 15.058V4.94199L6.21348 10L1.17188 15.058ZM2.02773 15.8594L7.04078 10.83L8.71598 12.5107C9.40246 13.1994 10.5978 13.1991 11.2841 12.5107L12.9593 10.83L17.9723 15.8594H2.02773ZM18.8281 15.058L13.7865 10L18.8281 4.94199V15.058Z"
-											fill="#48B6F1" />
-									</svg> <span>info@goldensea.com</span></a>
-							</li>
-							<li>
+									</svg>
+									<span>
+										Giờ mở cửa: 9:30 sáng đến 5:30 chiều </span>
+								</li>
 
-								<svg xmlns="{{ asset('assets/www.w3.org/2000/svg.html') }}" width="18" height="18"
-									viewBox="0 0 20 20" fill="none">
-									<g clip-path="url(#clip0_366_61)">
-										<path
-											d="M9.51246 19.7391C9.62113 19.9021 9.8041 20 10 20C10.1959 20 10.3789 19.9021 10.4875 19.7391C11.8742 17.6591 13.9167 15.0903 15.34 12.4778C16.478 10.3889 17.0312 8.60727 17.0312 7.03125C17.0312 3.15422 13.877 0 10 0C6.12297 0 2.96875 3.15422 2.96875 7.03125C2.96875 8.60727 3.52199 10.3889 4.66004 12.4778C6.08227 15.0883 8.12863 17.6634 9.51246 19.7391ZM10 1.17188C13.2309 1.17188 15.8594 3.80039 15.8594 7.03125C15.8594 8.40641 15.3529 10.0046 14.3109 11.9171C13.0841 14.1691 11.3334 16.4534 10 18.3738C8.66684 16.4537 6.91602 14.1692 5.6891 11.9171C4.64715 10.0046 4.14062 8.40641 4.14062 7.03125C4.14062 3.80039 6.76914 1.17188 10 1.17188Z"
-											fill="#48B6F1"></path>
-										<path
-											d="M10 10.5469C11.9385 10.5469 13.5156 8.96977 13.5156 7.03125C13.5156 5.09273 11.9385 3.51562 10 3.51562C8.06148 3.51562 6.48438 5.09273 6.48438 7.03125C6.48438 8.96977 8.06148 10.5469 10 10.5469ZM10 4.6875C11.2923 4.6875 12.3438 5.73891 12.3438 7.03125C12.3438 8.32359 11.2923 9.375 10 9.375C8.70766 9.375 7.65625 8.32359 7.65625 7.03125C7.65625 5.73891 8.70766 4.6875 10 4.6875Z"
-											fill="#48B6F1"></path>
-									</g>
-									<defs>
-										<clipPath id="clip0_366_61">
-											<rect width="20" height="20" fill="white"></rect>
-										</clipPath>
-									</defs>
-								</svg> <span>
-									885 Cống quỳnh, P.Võ Thị Sáu, Q3, TP.HCM </span>
-							</li>
-							<li>
-								<svg width="28" height="29" viewBox="0 0 28 29" fill="none"
-									xmlns="{{ asset('assets/www.w3.org/2000/svg.html') }}">
-									<g clip-path="url(#clip0_329_6743)">
-										<path
-											d="M14 0.709961C6.2913 0.709961 0 7.0017 0 14.71C0 22.4187 6.29174 28.71 14 28.71C21.7087 28.71 28 22.4182 28 14.71C28 7.00127 21.7083 0.709961 14 0.709961ZM14 27.0693C7.18501 27.0693 1.64062 21.525 1.64062 14.71C1.64062 7.89497 7.18501 2.35059 14 2.35059C20.815 2.35059 26.3594 7.89497 26.3594 14.71C26.3594 21.525 20.815 27.0693 14 27.0693Z"
-											fill="#48B6F1" />
-										<path
-											d="M7.03906 22.4908C7.49211 22.4908 7.85937 22.1236 7.85937 21.6705C7.85937 21.2175 7.49211 20.8502 7.03906 20.8502C6.58602 20.8502 6.21875 21.2175 6.21875 21.6705C6.21875 22.1236 6.58602 22.4908 7.03906 22.4908Z"
-											fill="#48B6F1" />
-										<path
-											d="M20.9609 8.5697C21.414 8.5697 21.7812 8.20244 21.7812 7.74939C21.7812 7.29634 21.414 6.92908 20.9609 6.92908C20.5079 6.92908 20.1406 7.29634 20.1406 7.74939C20.1406 8.20244 20.5079 8.5697 20.9609 8.5697Z"
-											fill="#48B6F1" />
-										<path
-											d="M6.45902 7.16932C6.13866 7.48968 6.13866 8.00904 6.45902 8.3294C6.77938 8.64976 7.29875 8.64976 7.61911 8.3294C7.93946 8.00904 7.93946 7.48968 7.61911 7.16932C7.2988 6.84896 6.77938 6.84896 6.45902 7.16932Z"
-											fill="#48B6F1" />
-										<path
-											d="M20.3809 21.0905C20.0605 21.4109 20.0605 21.9302 20.3809 22.2506C20.7013 22.571 21.2206 22.571 21.541 22.2506C21.8613 21.9302 21.8613 21.4109 21.541 21.0905C21.2206 20.7702 20.7012 20.7702 20.3809 21.0905Z"
-											fill="#48B6F1" />
-										<path
-											d="M14 7.32715C14.453 7.32715 14.8203 6.95987 14.8203 6.50684V4.86621C14.8203 4.41318 14.453 4.0459 14 4.0459C13.547 4.0459 13.1797 4.41318 13.1797 4.86621V6.50684C13.1797 6.95987 13.547 7.32715 14 7.32715Z"
-											fill="#48B6F1" />
-										<path
-											d="M14 22.0928C13.547 22.0928 13.1797 22.4601 13.1797 22.9131V24.5537C13.1797 25.0067 13.547 25.374 14 25.374C14.453 25.374 14.8203 25.0067 14.8203 24.5537V22.9131C14.8203 22.4601 14.453 22.0928 14 22.0928Z"
-											fill="#48B6F1" />
-										<path
-											d="M6.61719 14.71C6.61719 14.2569 6.24991 13.8896 5.79688 13.8896H4.15625C3.70322 13.8896 3.33594 14.2569 3.33594 14.71C3.33594 15.163 3.70322 15.5303 4.15625 15.5303H5.79688C6.24991 15.5303 6.61719 15.163 6.61719 14.71Z"
-											fill="#48B6F1" />
-										<path
-											d="M21.3828 14.71C21.3828 15.163 21.7501 15.5303 22.2031 15.5303H23.8438C24.2968 15.5303 24.6641 15.163 24.6641 14.71C24.6641 14.2569 24.2968 13.8896 23.8438 13.8896H22.2031C21.7501 13.8896 21.3828 14.2569 21.3828 14.71Z"
-											fill="#48B6F1" />
-										<path
-											d="M14.8203 14.3702V9.78809C14.8203 9.33505 14.453 8.96777 14 8.96777C13.547 8.96777 13.1797 9.33505 13.1797 9.78809V14.71C13.1797 14.9275 13.2661 15.1361 13.42 15.29L18.3419 20.2119C18.6622 20.5322 19.1816 20.5323 19.5019 20.2119C19.8223 19.8915 19.8223 19.3722 19.5019 19.0518L14.8203 14.3702Z"
-											fill="#48B6F1" />
-									</g>
-									<defs>
-										<clipPath id="clip0_329_6743">
-											<rect width="28" height="28" fill="white"
-												transform="translate(0 0.709961)" />
-										</clipPath>
-									</defs>
-								</svg>
-								<span>
-									Giờ mở cửa: 9:30 sáng đến 5:30 chiều </span>
-							</li>
-
-						</ul>
-					</div>
-					<div class="pt-sidebars">
-					</div>
-				</div>
-			</div>
-			<div class="pt-breadcrumb-style-1">
-				<div class="container">
-					<div class="row align-items-center">
-						<div class="col-lg-12">
-							<nav aria-label="breadcrumb">
-								<div class="pt-breadcrumb-title">
-									<h1>
-										Trang chủ </h1>
-								</div>
-								<div class="pt-breadcrumb-container">
-									<ol class="breadcrumb">
-									</ol>
-								</div>
-							</nav>
+							</ul>
+						</div>
+						<div class="pt-sidebars">
 						</div>
 					</div>
 				</div>
-			</div>
-		</div><!-- .site-content-contain -->
-	</div> <!-- Peaceful themes -->
-	</div><!-- #page -->
+				<div class="pt-breadcrumb-style-1">
+					<div class="container">
+						<div class="row align-items-center">
+							<div class="col-lg-12">
+								<nav aria-label="breadcrumb">
+									<div class="pt-breadcrumb-title">
+										<h1>
+											Trang chủ </h1>
+									</div>
+									<div class="pt-breadcrumb-container">
+										<ol class="breadcrumb">
+										</ol>
+									</div>
+								</nav>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div><!-- .site-content-contain -->
+		</div> <!-- Peaceful themes -->
+		</div><!-- #page_client_home -->
+	</main>
+
+	@include('clients.partials.footer_home')
 	<!-- === back-to-top === -->
 	<!-- === back-to-top End === -->
 
@@ -906,12 +911,15 @@
 			document.body.className = c;
 		})();
 	</script>
+	{{--
 	<script>
 		if (typeof revslider_showDoubleJqueryError === "undefined") { function revslider_showDoubleJqueryError(sliderID) { console.log("You have some jquery.js library include that comes after the Slider Revolution files js inclusion."); console.log("To fix this, you can:"); console.log("1. Set 'Module General Options' -> 'Advanced' -> 'jQuery & OutPut Filters' -> 'Put JS to Body' to on"); console.log("2. Find the double jQuery.js inclusion and remove it"); return "Double Included jQuery Library"; } }
-	</script>
+	</script> --}}
+
+	{{--
 	<link rel="preload" as="font" id="rs-icon-set-revicon-woff"
 		href="{{ asset('assets/clients/wp-content/plugins/revslider/public/assets/fonts/revicons/revicons90c6.woff')}}"
-		type="font/woff" crossorigin="anonymous" media="all" />
+		type="font/woff" crossorigin="anonymous" media="all" /> --}}
 	<link rel='stylesheet' id='wc-blocks-style-css'
 		href="{{ asset('assets/clients/wp-content/plugins/woocommerce/assets/client/blocks/wc-blocks3a56.css?ver=wc-9.8.1')}}"
 		media='all' />
@@ -1164,7 +1172,7 @@
 						onHoverStop: false,
 						arrows: {
 							enable: true,
-							tmp: "<div class=\"tp-title-wrap\">  	<div class=\"tp-arr-imgholder\"></div> </div>",
+							tmp: "<div class=\"tp-title-wrap\">     <div class=\"tp-arr-imgholder\"></div> </div>",
 							style: "zeus",
 							hide_onmobile: true,
 							hide_under: "1399px",

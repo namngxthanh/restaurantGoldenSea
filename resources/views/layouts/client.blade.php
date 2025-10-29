@@ -814,7 +814,7 @@
                 @include('clients.partials.footer')
             </div><!-- .site-content-contain -->
         </div> <!-- Peaceful themes -->
-    </div><!-- #page -->
+    </div><!-- #page_client -->
     <!-- === back-to-top === -->
     <!-- === back-to-top End === -->
 

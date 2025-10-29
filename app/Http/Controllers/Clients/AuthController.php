@@ -112,7 +112,7 @@ class AuthController extends Controller
             if(in_array(AuthFacade::user()->role->name, haystack: ['customer'])) {
                 $request->session()->regenerate();
                 toastr()->success('Yay, đăng nhập thành công');
-                return redirect()->route('home');
+                return redirect()->route('account');
             }else{
                 AuthFacade::logout();
                 toastr()->warning('Bạn không có quyền truy cập vào trang này');

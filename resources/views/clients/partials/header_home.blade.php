@@ -139,9 +139,9 @@
         <div class="col-lg-12">
           <div class="pt-container-wrapper">
             <div class="pt-header-logo">
-              <a class="navbar-brand" href="index.html">
+              <a class="navbar-brand" href="{{ url('/') }}">
                 <img class="img-fluid logo" src="{{ asset('assets/clients/wp-content/uploads/2024/03/logo.png')}}"
-                  alt="seabite">
+                  alt="goldensea">
 
               </a>
             </div>
@@ -168,13 +168,14 @@
                   data-mobile-direction="vertical" data-hover-intent-timeout="300" data-hover-intent-interval="100">
                   <li
                     class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-current-menu-item mega-current_page_item mega-menu-item-home mega-current-menu-ancestor mega-current-menu-parent mega-menu-item-has-children mega-align-bottom-left mega-menu-flyout mega-dropdown mega-menu-item-2526"
-                    id="mega-menu-item-2526"><a class="mega-menu-link" href="index.html" aria-expanded="false"
+                    id="mega-menu-item-2526"><a class="mega-menu-link" href="{{ url('/') }}" aria-expanded="false"
                       aria-current="page" tabindex="0">Trang chủ<span class="mega-indicator"
                         aria-hidden="true"></span></a>
                     <ul class="mega-sub-menu">
                       <li
                         class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-home mega-current-menu-item mega-page_item mega-page-item-268 mega-current_page_item mega-menu-item-2523"
-                        id="mega-menu-item-2523"><a class="mega-menu-link" href="index.html" aria-current="page">Main
+                        id="mega-menu-item-2523"><a class="mega-menu-link" href="{{ url('/') }}"
+                          aria-current="page">Main
                           Home</a></li>
                       <li
                         class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-2524"

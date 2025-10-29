@@ -6,9 +6,9 @@
                 <div class="row">
                     <div class="col-lg-3 col-md-6">
                         <div class="widget">
-                            <a class="navbar-brand" href="{{ asset('assets/clients/index.html')}}">
+                            <a class="navbar-brand" href="{{ url('/') }}">
                                 <img src="{{ asset('assets/clients/wp-content/uploads/2024/03/logo.png')}}"
-                                    class="pt-footer-logo" alt="aitech-footer-logo">
+                                    class="pt-footer-logo" alt="goldensea-footer-logo">
                             </a>
                             <p>Chúng tôi tôn vinh tinh hoa ẩm thực biển
                                 bằng những món ăn được chế biến từ nguồn hải sản tươi ngon nhất.</p>

@@ -143,7 +143,7 @@
                 <div class="col-lg-12">
                     <div class="pt-container-wrapper">
                         <div class="pt-header-logo">
-                            <a class="navbar-brand" href="index.html">
+                            <a class="navbar-brand" href="{{ url('/') }}">
                                 <img class="img-fluid logo"
                                     src="{{ asset('assets/clients/wp-content/uploads/2024/03/logo.png')}}"
                                     alt="GoldenSea">

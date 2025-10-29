@@ -4,16 +4,14 @@
 
 @section('breadcrumb', 'Tài khoản')
 @section('content')
-    <!-- WISHLIST AREA START -->
     <div class="liton__wishlist-area pb-70">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <!-- PRODUCT TAB AREA START -->
                     <div class="ltn__product-tab-area">
                         <div class="container">
                             <div class="row">
-                                <div class="col-lg-4">
+                                {{-- <div class="col-lg-4">
                                     <div class="ltn__tab-menu-list mb-50">
                                         <div class="nav">
                                             <a class="active show" data-bs-toggle="tab" href="#liton_tab_dashboard">Bảng
@@ -27,10 +25,47 @@
                                                     class="fas fa-user"></i></a>
                                             <a data-bs-toggle="tab" href="#liton_tab_password">Đổi mật khẩu<i
                                                     class="fas fa-key"></i></a>
+                                        </div>
+                                    </div>
+                                </div> --}}
+                                <div class="col-lg-4">
+                                    <div class="ltn__tab-menu-list mb-50">
+                                        <div class="nav nav-pills flex-column">
+
+                                            <a class="nav-link active show d-flex justify-content-between align-items-center"
+                                                data-bs-toggle="tab" href="#liton_tab_dashboard">
+                                                <span>Bảng điều khiển</span>
+                                                <i class="fas fa-home"></i>
+                                            </a>
+
+                                            <a class="nav-link d-flex justify-content-between align-items-center"
+                                                data-bs-toggle="tab" href="#liton_tab_orders">
+                                                <span>Đơn hàng</span>
+                                                <i class="fas fa-file-alt"></i>
+                                            </a>
+
+                                            <a class="nav-link d-flex justify-content-between align-items-center"
+                                                data-bs-toggle="tab" href="#liton_tab_address">
+                                                <span>Địa chỉ</span>
+                                                <i class="fas fa-map-marker-alt"></i>
+                                            </a>
+
+                                            <a class="nav-link d-flex justify-content-between align-items-center"
+                                                data-bs-toggle="tab" href="#liton_tab_account">
+                                                <span>Chi tiết tài khoản</span>
+                                                <i class="fas fa-user"></i>
+                                            </a>
+
+                                            <a class="nav-link d-flex justify-content-between align-items-center"
+                                                data-bs-toggle="tab" href="#liton_tab_password">
+                                                <span>Đổi mật khẩu</span>
+                                                <i class="fas fa-key"></i>
+                                            </a>
 
                                         </div>
                                     </div>
                                 </div>
+
                                 <div class="col-lg-8">
                                     <div class="tab-content">
                                         <div class="tab-pane fade active show" id="liton_tab_dashboard">
@@ -184,10 +219,8 @@
                             </div>
                         </div>
                     </div>
-                    <!-- PRODUCT TAB AREA END -->
                 </div>
             </div>
         </div>
     </div>
-    <!-- WISHLIST AREA START -->
 @endsection
