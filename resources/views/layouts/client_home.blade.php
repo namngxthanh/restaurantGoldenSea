@@ -1142,7 +1142,7 @@
 	</script>
 	<script src="{{ asset('assets/clients/wp-content/plugins/elementor/assets/js/frontend.min87cc.js?ver=3.28.3')}}"
 		id="elementor-frontend-js"></script>
-	<script id="rs-initialisation-scripts">
+	<script src=id="rs-initialisation-scripts">
 		var tpj = jQuery;
 
 		var revapi2;
