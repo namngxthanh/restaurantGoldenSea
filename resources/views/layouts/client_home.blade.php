@@ -664,6 +664,7 @@
 	<style>
 		/** Mega Menu CSS: fs **/
 	</style>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery-toastify@1.1.0/jquery.toastify.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
 	<!-- Import Custom CSS -->
 	<link rel="stylesheet"
@@ -918,8 +919,8 @@
 
 	{{--
 	<link rel="preload" as="font" id="rs-icon-set-revicon-woff"
-		href="{{ asset('assets/clients/wp-content/plugins/revslider/public/assets/fonts/revicons/revicons90c6.woff')}}"
-		type="font/woff" crossorigin="anonymous" media="all" /> --}}
+		href="{{ asset('assets/clients/wp-content/plugins/revslider/public/assets/fonts/revicons/revicons90c6.woff?5510888')}}"
+		type="font/woff" crossorigin="anonymous" media="all" />
 	<link rel='stylesheet' id='wc-blocks-style-css'
 		href="{{ asset('assets/clients/wp-content/plugins/woocommerce/assets/client/blocks/wc-blocks3a56.css?ver=wc-9.8.1')}}"
 		media='all' />
@@ -1211,6 +1212,7 @@
 	</script>
 	<script src="{{ asset('assets/clients/wp-includes/js/custom.js')}}"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/jquery-toastify@1.1.0/jquery.toastify.js"></script>
 </body>
 
 
